@@ -1,0 +1,59 @@
+/* .card-container {
+    width: 300px;
+    height: 400px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+    transition: 0.2s;
+    
+    margin: 92px;
+    margin-left: 5px;
+  } */
+
+  @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+  .rating {
+    width: 54px;
+    height: 38px;
+    background-color: #9E13CF;
+    border-top-left-radius: 13px;
+    border-bottom-right-radius: 15px;
+    margin-top:25px;
+    margin-left: 25px;
+    display: inline-block;
+    position: absolute;
+    
+   
+    
+    
+
+  }
+
+.h2-rating{
+
+    font-family: 'Golos';
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: relative;
+    margin-top: 1px;
+    margin-right:auto;
+    
+  }
+
+
+
+.img {
+    margin: 25px;
+    display: inline-block;
+    object-fit:cover;
+    width: 270px;
+    height: 350px;
+
+
+    border-radius: 13px;
+    border-width: 5px;
+    border-color: aqua;
+
+
+
+  }

@@ -1,0 +1,21 @@
+[
+    {
+        "image" : "./se7en.jpg",
+        "title" : "Se7en"
+    },
+
+    {
+        "image" : "./sherlock.jpg",
+        "title" : "Sherlock"
+    },
+
+    {
+        "image" : "./taxi.jpg",
+        "title" : "Taxi"
+    },
+    {
+        "image" : "./zodiac.jpg",
+        "title" : "Zodiac"
+    }
+]
+
