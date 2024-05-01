@@ -1,0 +1,62 @@
+
+// @import "/node_modules/bootstrap/scss/_functions";
+// @import "/node_modules/bootstrap/scss/_variables";
+
+
+ $primary : #9E13CF;
+
+// $custom-colors: (
+//     "main" : #9E13CF
+// );
+
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+ @import "/node_modules/bootstrap/scss/bootstrap";
+
+
+.border-7 {
+    border-width: 7px !important;
+  }
+
+@font-face {
+    font-family: "Porter Sans Block";
+    src: url("../fonts/portersansblock-regular-webfont.woff"),
+         url("../fonts/portersansblock-regular-webfont.woff2");
+}
+
+
+.mid-links {
+    /* padding-right: 10px; */
+    color: white;
+    margin-left: 2px;
+    margin-right: 25px;
+    font-family: 'Golos';
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+
+
+.right-links {
+    position: relative;
+    margin-right: 26px;
+    
+    margin-left:5px;
+    font-family: 'Golos';
+    font-size: 20px;
+    font-weight: 600;
+
+
+    
+}
+
+
+
+
+.brand {
+    margin-left: 35px;
+   font-family: "Porter Sans Block";
+   font-size: 30px;
+}
+
+

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 import films from './films.json'
 import { Card } from './Card/Card';
 import { Button } from 'react-bootstrap';
@@ -14,7 +15,7 @@ function App() {
 
     
     <Header/>
-    {/* {films.map(film => <Card src={film.image} alt={film.title}/>)} */}
+    {films.map(film => <Card src={film.image} alt={film.title}/>)}
     
     
       

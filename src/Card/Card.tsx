@@ -1,4 +1,4 @@
-import './Card.css'
+import './Card.scss'
 
 
 export const Card = (props: React.HTMLProps<HTMLImageElement>) => {
