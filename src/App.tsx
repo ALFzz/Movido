@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import films from './films.json'
 import { Card } from './Card/Card';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import {Header} from './Header/Header'
+import { Footer } from './Footer/Footer';
 
 
 function App() {
@@ -15,7 +16,14 @@ function App() {
 
     
     <Header/>
+    
+      
     {films.map(film => <Card src={film.image} alt={film.title}/>)}
+
+    
+      
+    <Footer/>
+    
     
     
       
