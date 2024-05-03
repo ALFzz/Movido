@@ -16,12 +16,41 @@ export const Poster = () => {
                         любое время и в любом месте. Погрузитесь в мир кино с Movido уже сегодня!</p>
                 
                 </div>
-                <Button  className='mt-3 b btn-dark '>Начните прямо сейчас!</Button>
+                <Button  className='mt-3 btn btn-primary  '>Начните прямо сейчас!</Button>
                 <br/>
-                <div className='wrap img-slide position-absolute bottom-1 start-0'>
-                    <img className='img mt-5' src='/casino.jpg'/>
-                    <img className='img mt-5' src='/wolf.jpg'/>
+                <div className='slide'>
+                    <div className='wrap img-slide '>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                    </div>
+                    <div className='wrap img-slide '>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/wolf.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/casino.jpg'/>
+                    </div>
                 </div>
+                
               
             </div>
             
