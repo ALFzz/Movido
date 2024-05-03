@@ -10,10 +10,10 @@ import iconVK from '/icons/Vkontakte.svg';
 export const Footer = () => {
   return (
     <>
-      <Navbar className=" position-absolute start-0 end-0 border-top border-primary border-7" bg="black" data-bs-theme="dark">
+      <Navbar className=" position-absolute  start-0 end-0 border-top border-7" bg="black" data-bs-theme="dark">
         <Container >
         <Navbar.Brand className='brand' href="#home">Movido</Navbar.Brand>
-          <Nav > 
+          <Nav className='wrap' > 
             <Nav.Link className="mid-links " href="#home">О нас</Nav.Link>
             <Nav.Link className="mid-links" href="#features">Контакты</Nav.Link>
             <Nav.Link className="mid-links" href="#detectives">FAQ</Nav.Link>

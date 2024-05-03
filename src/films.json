@@ -1,37 +1,58 @@
 [
     {
         "image" : "./se7en.jpg",
-        "title" : "Se7en"
+        "title" : "Семь",
+        "rating": 9.2,
+        "year": 1995
+        
     },
 
+    
+    
     {
         "image" : "./sherlock.jpg",
-        "title" : "Sherlock"
+        "title" : "Шерлок Холмс",
+        "rating": 7.6,
+        "year": 2009
     },
 
     {
         "image" : "./taxi.jpg",
-        "title" : "Taxi"
+        "title" : "Такси",
+        "rating": 8.5,
+        "year": 1998
     },
     {
         "image" : "./zodiac.jpg",
-        "title" : "Zodiac"
+        "title" : "Зодиак",
+        "rating": 8.7,
+        "year": 2007
     },
     {
         "image": "./1+1.jpg",
-        "title": "1+1"
+        "title": "1+1",
+        "rating": 9.4,
+        "year": 2001
     },
     {
-        "image": "./1+1.jpg",
-        "title": "1+1"
+        "image": "./black.jpg",
+        "title": "Люди в чёрном",
+        "rating": 9.1,
+        "year": 1997
     },
     {
-        "image": "./1+1.jpg",
-        "title": "1+1"
+        "image": "./wolf.jpg",
+        "title": "Волк с Уолл-Стрит",
+        "rating": 7.9,
+        "year": 2013
     },
     {
-        "image": "./1+1.jpg",
-        "title": "1+1"
+        "image": "./knives out.jpg",
+        "title": "Достать Ножи",
+        "rating": 8.3,
+        "year": 2019
     }
+
+
 ]
 
