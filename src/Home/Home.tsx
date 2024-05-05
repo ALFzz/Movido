@@ -1,5 +1,5 @@
-import { Header } from "./Header/Header";
-import { Footer } from "./Footer/Footer";
+import { Header } from "../Header/Header";
+import { Footer } from "../Footer/Footer";
 import { Poster } from "./Poster/Poster";
 import { Recommendation } from "./Recomendation/Recomendation";
 

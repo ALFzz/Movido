@@ -2,8 +2,11 @@ import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { Films } from './Films';
-import { Home } from './Home';
-import { Poster } from './Poster/Poster';
+import { Home } from './Home/Home';
+import { Poster } from './Home/Poster/Poster';
+import { Header } from './Header/Header';
+import { Answer } from './Answer/Answer';
+import { FAQ } from './FAQ';
 
 
 function App() {
@@ -11,7 +14,10 @@ function App() {
 
   return (
     <>
-      <Home/>
+      {/* <Home/> */}
+
+      <FAQ/>
+
       {/* <Films/> */}
     </>
   )

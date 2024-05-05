@@ -1,6 +1,6 @@
 import './Recomendation.scss'
-import films from '../films.json'
-import { Card } from '../Card/Card'
+import films from '../../films.json'
+import { Card } from '../../Card/Card'
 
 
 interface IRecommend {
