@@ -15,11 +15,14 @@ export const Card = (props: IFilm) => {
   return (
     <>
     <div className='inline'>
+      <div className='anim'>
+
       <div className='rating'>
         <h2 className='h2-rating'>{props.rating}</h2>
       </div>
 
-      <img className='img' src= {props.image} alt= {props.title}/>
+      <img className='image-card' src= {props.image} alt= {props.title}/>
+      </div>
       <p className='name'>{props.title}</p>
       <p className='year'>{props.year}</p>
     </div>

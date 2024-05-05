@@ -22,31 +22,31 @@ export const Poster = () => {
                     <div className='wrap img-slide '>
                         <img className='img mt-5' src='/casino.jpg'/>
                         <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/incredibles.jpg'/>
+                        <img className='img mt-5' src='/black.jpg'/>
+                        <img className='img mt-5' src='/knives out.jpg'/>
                         <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/se7en.jpg'/>
+                        <img className='img mt-5' src='/sherlock.jpg'/>
+                        <img className='img mt-5' src='/truman.jpg'/>
+                        <img className='img mt-5' src='/zodiac.jpg'/>
+                        <img className='img mt-5' src='/1+1.jpg'/>
+                        <img className='img mt-5' src='/taxi.jpg'/>
                         <img className='img mt-5' src='/casino.jpg'/>
                     </div>
                     <div className='wrap img-slide '>
                         <img className='img mt-5' src='/casino.jpg'/>
                         <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/incredibles.jpg'/>
+                        <img className='img mt-5' src='/black.jpg'/>
+                        <img className='img mt-5' src='/knives out.jpg'/>
                         <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/wolf.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
-                        <img className='img mt-5' src='/casino.jpg'/>
+                        <img className='img mt-5' src='/se7en.jpg'/>
+                        <img className='img mt-5' src='/sherlock.jpg'/>
+                        <img className='img mt-5' src='/truman.jpg'/>
+                        <img className='img mt-5' src='/zodiac.jpg'/>
+                        <img className='img mt-5' src='/1+1.jpg'/>
+                        <img className='img mt-5' src='/taxi.jpg'/>
                         <img className='img mt-5' src='/casino.jpg'/>
                     </div>
                 </div>

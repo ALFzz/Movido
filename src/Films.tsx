@@ -13,9 +13,11 @@ export function Films() {
 
   return (
     <>
-    <Header/> 
+    <Header/>     
     
     {films.map(film => <Card  title={film.title } image={film.image} rating={film.rating} year={film.year} alt={film.title}/>)}
+
+    
 
     <Footer/>
     </>
