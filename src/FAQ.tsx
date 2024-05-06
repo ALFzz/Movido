@@ -2,8 +2,8 @@ import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { Card } from './Card/Card';
-import faq from './faq.json';
-import {Header} from './Header/Header'
+import faq from './faq.json'
+import {Header} from './Header/Header';
 import { Footer } from './Footer/Footer';
 import { Answer } from './Answer/Answer';
 

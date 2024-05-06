@@ -1,7 +1,7 @@
-import { Header } from "../Header/Header";
-import { Footer } from "../Footer/Footer";
-import { Poster } from "./Poster/Poster";
-import { Recommendation } from "./Recomendation/Recomendation";
+import { Header } from "./Header/Header";
+import { Footer } from "./Footer/Footer";
+import { Poster } from "./Home/Poster/Poster";
+import { Recommendation } from "./Home/Recomendation/Recomendation";
 
 
 export function Home() {

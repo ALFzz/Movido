@@ -16,8 +16,8 @@ export const Recommendation =
 
     return (
         <>
-            <h1 className="h1">{props.header}</h1>
-            <h2 className='h3'>{props.subtitle}</h2>
+            <h1 className="title">{props.header}</h1>
+            <h2 className='subtitle'>{props.subtitle}</h2>
             <div className='arr'>
 
             
