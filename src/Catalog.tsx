@@ -8,7 +8,7 @@ import {Header} from './Header/Header'
 import { Footer } from './Footer/Footer';
 
 
-export function Films() {
+export function Catalog() {
 //   const [count, setCount] = useState(0)
 
   return (
