@@ -3,7 +3,7 @@ $primary : #9E13CF;
 
 .big-image {
     width: 60%;
-    margin-left: 598px;
+    margin-left: 592px;
     height: 500px;
     opacity: 40%;
 
@@ -14,10 +14,19 @@ $primary : #9E13CF;
     
 }
 
+.cont {
+    // width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, $primary, black );
+    background-size: 200% 200%;
+    z-index: 1;
+    // animation: gradient 7s ease infinite;
+}
+
 .blacker_blur {
 
     width: 700px;
-    height: 600px;
+    height: 520px;
     filter: blur(20px);
     // clip-path: ellipse(130px 140px at 10% 20%);
 
@@ -53,7 +62,7 @@ $primary : #9E13CF;
     margin-top: 190px;
     margin-left: 175px;
     text-align: start;
-    color: gray;
+    color: #808080;
     z-index: 1;
     font-family: 'Golos';
     font-size: 17px;

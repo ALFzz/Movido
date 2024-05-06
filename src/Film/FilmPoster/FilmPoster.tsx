@@ -8,7 +8,7 @@ export const FilmPoster = () => {
         <>
             
 
-            <div>
+            <div className=' cont'>
 
                 <img className='big-image position-absolute start-0' src="/public/men.png" alt="" />
                 <div className='blacker_blur'></div>
