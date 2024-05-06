@@ -8,6 +8,7 @@ import { Header } from './Header/Header';
 import { Answer } from './Answer/Answer';
 import { FAQ } from './FAQ';
 import { Contacts } from './Contacts/Contacts';
+import { AboutUs } from './AboutUs/AboutUs';
 
 
 
@@ -18,7 +19,10 @@ function App() {
     <>
       {/* <Home/> */}
 
-      <Contacts/>
+      {/* <Contacts/> */}
+
+     <AboutUs/>
+
 
       {/* <FAQ/> */}
 

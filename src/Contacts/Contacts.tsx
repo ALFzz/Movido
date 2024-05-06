@@ -15,7 +15,7 @@ export function Contacts() {
 
     <div>
 
-      <h1 className='title'>Контакты</h1>
+      <h1 className='title'>Контакты</h1> <br /> <br />
 
       <h2 className='subtitle'>ООО «Movido» <br /><br/> 
       Адрес Местонахождения: 161343, Россия, г. Москва,
