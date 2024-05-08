@@ -32,11 +32,11 @@ function App() {
 
      {/* <Autorization/> */}
 
-     {/* <Profile/> */}
+     <Profile/>
 
      
 
-      <Film/>
+      {/* <Film/> */}
 
 
       {/* <FAQ/> */}

@@ -1,3 +1,5 @@
+$primary : #9E13CF;
+
 .cabinet-title {
 
     font-family: 'Golos';
@@ -27,7 +29,7 @@
 
 .info-ans {
     margin-top: -39px;
-    margin-left: 130px;
+    margin-left: 140px;
     font-family: 'Golos';
     font-weight: 500;
     // font-size: 40px;
@@ -42,5 +44,59 @@
     text-align: start;
     color: white;
     margin-top: 70px;
+    
+}
+
+.fav-title {
+    font-family: 'Golos';
+    position: absolute;
+    font-weight: 600;
+    // font-size: 40px;
+    margin-left: 730px;
+    text-align: start;
+    color: white;
+    margin-top: -196px;
+}
+
+.bas {
+    position: absolute;
+    margin-left: 730px;
+    width: 500px;
+    margin-top: -101px;
+}
+
+.fas {
+    font-family: 'Golos';
+    // position: absolute;
+    font-weight: 500;
+    background-color: black;
+    border: 1px solid $primary;
+    height: 50px;
+    color: white;
+}
+
+.btn {
+    font-family: 'Golos';
+    font-size: 20px;
+    font-weight: 600;
+    background-color: black;
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 1;
+    border-radius: 50px;
+    border: 3px solid $primary;
+    
+    
+     //background-color: #9E13CF;
+     outline-color: #9E13CF !important;
+
+}
+
+.btn:hover {
+    background-color: black;
+    box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
+    border-color: $primary;
     
 }
