@@ -2,6 +2,7 @@ import { Button } from 'react-bootstrap'
 import { Footer } from '../../Footer/Footer'
 import { Header } from '../../Header/Header'
 import './FilmPoster.scss'
+import { Heart } from '../Heart/Heart'
 
 export const FilmPoster = () => {
     return(
@@ -15,6 +16,9 @@ export const FilmPoster = () => {
                 <div>
                     <h1 className='film-title'>Люди в чёрном</h1>
                     <Button className='btn'>Смотреть</Button>
+                    <div className='pos'><Heart/></div>
+                    
+
                     <span>
                         <p className='rate'>9.1</p>
                         <p className='year'>1997</p>
@@ -31,7 +35,7 @@ export const FilmPoster = () => {
 
                 <div className='line'></div>
 
-
+               
                 
             </div>
 

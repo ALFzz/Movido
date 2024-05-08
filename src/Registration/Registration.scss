@@ -1,6 +1,6 @@
 $primary : #9E13CF;
 
-.email {
+.login {
     width: 500px;
     margin-left: 500px;
     margin-top: 40px;
@@ -9,10 +9,19 @@ $primary : #9E13CF;
     
 }
 
+.email {
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 130px;
+    justify-content: center;
+    // text-align: start;
+    
+}
+
 .password {
     width: 500px;
     margin-left: 500px;
-    margin-top:130px;
+    margin-top:220px;
     justify-content: center;
     // text-align: start;
     
@@ -26,7 +35,7 @@ $primary : #9E13CF;
     width: 350px;
     height: 70px;
     // position: absolute;
-    margin-top: 230px;
+    margin-top: 320px;
     z-index: 1;
     border-radius: 50px;
     border: 3px solid $primary;
@@ -45,7 +54,7 @@ $primary : #9E13CF;
 }
 
 .footer {
-    margin-top: 138px;
+    margin-top: 78px;
 }
 
 .reg-title {
@@ -60,6 +69,6 @@ $primary : #9E13CF;
 }
 
 .full {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 

@@ -12,6 +12,8 @@ import { AboutUs } from './AboutUs/AboutUs';
 import { Film } from './Film/Film';
 import {Registration} from './Registration/Registration'
 import { Autorization } from './Authorization/Authorization';
+import { Profile } from './Profile/Profile';
+import { Heart } from './Film/Heart/Heart';
 
 
 
@@ -28,9 +30,13 @@ function App() {
 
      {/* <Registration/> */}
 
-     <Autorization/>
+     {/* <Autorization/> */}
 
-      {/* <Film/> */}
+     {/* <Profile/> */}
+
+     
+
+      <Film/>
 
 
       {/* <FAQ/> */}

@@ -15,9 +15,18 @@ export function Registration() {
             <h1 className='reg-title  mb-0'>Регистрация</h1>
 
             <div className='form'>
+
+                <FloatingLabel 
+                    controlId="floatingPassword"
+                    label=" Придумайте Логин"
+                    className=' position-absolute login'>
+                    <Form.Control type="login" placeholder="Password" />
+                 </FloatingLabel>
+
+                 
                 <FloatingLabel
                     controlId="floatingInput"
-                    label="Email"
+                    label=" Напишите Email"
                     className="mb-5 position-absolute   email"
                     // style={{ width: '1000px' }}
                     >
@@ -27,10 +36,12 @@ export function Registration() {
 
                 <FloatingLabel 
                     controlId="floatingPassword"
-                    label="Пароль"
+                    label="Придумайте Пароль"
                     className=' position-absolute password'>
                     <Form.Control type="password" placeholder="Password" />
                  </FloatingLabel>
+
+                 
 
                 <Button  className=' btn btn-primary  '>Зарегистрироваться</Button>
             </div>
