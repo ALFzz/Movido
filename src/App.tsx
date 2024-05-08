@@ -10,6 +10,8 @@ import { FAQ } from './FAQ';
 import { Contacts } from './Contacts/Contacts';
 import { AboutUs } from './AboutUs/AboutUs';
 import { Film } from './Film/Film';
+import {Registration} from './Registration/Registration'
+import { Autorization } from './Authorization/Authorization';
 
 
 
@@ -24,7 +26,11 @@ function App() {
 
      {/* <AboutUs/> */}
 
-      <Film/>
+     {/* <Registration/> */}
+
+     <Autorization/>
+
+      {/* <Film/> */}
 
 
       {/* <FAQ/> */}
