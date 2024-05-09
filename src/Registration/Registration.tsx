@@ -11,15 +11,15 @@ export function Registration() {
 
         <Header/>
 
-        <div className='full'>
+        <div className='reg-full'>
             <h1 className='reg-title  mb-0'>Регистрация</h1>
 
-            <div className='form'>
+            <div className='reg-form'>
 
                 <FloatingLabel 
                     controlId="floatingPassword"
                     label=" Придумайте Логин"
-                    className=' position-absolute login'>
+                    className=' position-absolute reg-login'>
                     <Form.Control type="login" placeholder="Password" />
                  </FloatingLabel>
 
@@ -27,7 +27,7 @@ export function Registration() {
                 <FloatingLabel
                     controlId="floatingInput"
                     label=" Напишите Email"
-                    className="mb-5 position-absolute   email"
+                    className="mb-5 position-absolute   reg-email"
                     // style={{ width: '1000px' }}
                     >
                     <Form.Control type="email" placeholder="name@example.com" />
@@ -37,16 +37,16 @@ export function Registration() {
                 <FloatingLabel 
                     controlId="floatingPassword"
                     label="Придумайте Пароль"
-                    className=' position-absolute password'>
+                    className=' position-absolute reg-password'>
                     <Form.Control type="password" placeholder="Password" />
                  </FloatingLabel>
 
                  
 
-                <Button  className=' btn btn-primary  '>Зарегистрироваться</Button>
+                <Button  className=' reg-btn btn-primary  '>Зарегистрироваться</Button>
             </div>
 
-            <div className='footer position-absolute  start-0 end-0 '>
+            <div className='reg-footer position-absolute  start-0 end-0 '>
                 <Footer/>
             </div>
             

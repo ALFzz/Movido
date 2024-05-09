@@ -11,14 +11,14 @@ export function Autorization() {
 
         <Header/>
 
-        <div className='full'>
-            <h1 className='reg-title  mb-0'>Вход</h1>
+        <div className='auth-full'>
+            <h1 className='auth-reg-title  mb-0'>Вход</h1>
 
             <div className='form'>
                 <FloatingLabel
                     controlId="floatingInput"
                     label="Email"
-                    className="mb-5 position-absolute   email"
+                    className="mb-5 position-absolute   auth-email"
                     // style={{ width: '1000px' }}
                     >
                     <Form.Control type="email" placeholder="name@example.com" />
@@ -28,14 +28,14 @@ export function Autorization() {
                 <FloatingLabel 
                     controlId="floatingPassword"
                     label="Пароль"
-                    className=' position-absolute password'>
+                    className=' position-absolute auth-password'>
                     <Form.Control type="password" placeholder="Password" />
                  </FloatingLabel>
 
-                <Button  className=' btn btn-primary  '>Войти</Button>
+                <Button className='auth-btn btn-primary' >Войти</Button>
             </div>
 
-            <div className='footer position-absolute  start-0 end-0 '>
+            <div className='auth-footer position-absolute  start-0 end-0 '>
                 <Footer/>
             </div>
             

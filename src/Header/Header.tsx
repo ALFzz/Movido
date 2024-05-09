@@ -1,25 +1,26 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from 'react-router-dom';
 import './Header.scss'
 
 
 export const Header = () => {
   return (
     <>
-      <Navbar className=" fixed-top pb-0 mb-2 border-bottom  border-7" bg="black" data-bs-theme="dark">
+      <Navbar className=" fixed-top pb-0 mb-2 border-bottom  head-border-7" bg="black" data-bs-theme="dark">
         <Container >
-        <Navbar.Brand className='brand' href="#home">Movido</Navbar.Brand>
+        <Navbar.Brand className='head-brand' href="/">Movido</Navbar.Brand>
           <Nav > 
-            <Nav.Link className="mid-links " href="#home">Главная</Nav.Link>
-            <Nav.Link className="mid-links" href="#features"> Все Фильмы</Nav.Link>
-            <Nav.Link className="mid-links" href="#detectives">Детективы</Nav.Link>
-            <Nav.Link className="mid-links" href="#">Боевики</Nav.Link>
+            <Nav.Link className="head-mid-links " href="/">Главная</Nav.Link>
+            <Nav.Link className="head-mid-links" href="/catalog"> Все Фильмы</Nav.Link>
+            <Nav.Link className="head-mid-links" href="/catalog">Детективы</Nav.Link>
+            <Nav.Link className="head-mid-links" href="/catalog">Боевики</Nav.Link>
           </Nav>
 
           <Nav  > 
-            <Nav.Link className='enter'   href="#pricing">Вход</Nav.Link>
-            <Nav.Link  className='reg' href="#pricing">Регистрация</Nav.Link>
+            <Nav.Link className='head-enter'   href="/auth">Вход</Nav.Link>
+            <Nav.Link  className='head-reg' href="/reg">Регистрация</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

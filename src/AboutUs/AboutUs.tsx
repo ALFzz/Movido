@@ -7,9 +7,9 @@ export function AboutUs() {
         <>
             <Header />
 
-            <h1 className="title">О нас</h1> <br />
+            <h1 className="about-title">О нас</h1> <br />
 
-            <h2 className="subtitle">Мы в "Movido" стремимся сделать просмотр
+            <h2 className="about-subtitle">Мы в "Movido" стремимся сделать просмотр
              фильмов увлекательным и доступным для всех. Наша цель
               - предоставить широкий выбор контента различных жанров и направлений
               , чтобы каждый мог найти что-то по своему вкусу. <br /><br />

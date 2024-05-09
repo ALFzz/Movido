@@ -13,7 +13,7 @@ $primary : #9E13CF;
 //  @import "/node_modules/bootstrap/scss/bootstrap";
 
 
-.border-7 {
+.head-border-7 {
     border-width: 7px !important;
     border-color: $primary !important;
   }
@@ -25,7 +25,7 @@ $primary : #9E13CF;
 }
 
 
-.mid-links {
+.head-mid-links {
     margin-left: 20px;
     color: white;
     font-family: 'Golos';
@@ -35,7 +35,7 @@ $primary : #9E13CF;
 }
 
 
-.enter {
+.head-enter {
     position: relative;
     color: white;
     margin-right: 0px;
@@ -44,7 +44,7 @@ $primary : #9E13CF;
     font-weight: 600;
 }
 
-.reg {
+.head-reg {
     position: relative;
     color: white;
     margin-right: 24px;
@@ -58,7 +58,7 @@ $primary : #9E13CF;
 
 
 
-.brand {
+.head-brand {
     margin-left: 35px;
    font-family: "Porter Sans Block";
    font-size: 30px;

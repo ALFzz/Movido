@@ -1,6 +1,6 @@
 $primary : #9E13CF;
 
-.login {
+.reg-login {
     width: 500px;
     margin-left: 500px;
     margin-top: 40px;
@@ -9,7 +9,7 @@ $primary : #9E13CF;
     
 }
 
-.email {
+.reg-email {
     width: 500px;
     margin-left: 500px;
     margin-top: 130px;
@@ -18,7 +18,7 @@ $primary : #9E13CF;
     
 }
 
-.password {
+.reg-password {
     width: 500px;
     margin-left: 500px;
     margin-top:220px;
@@ -27,7 +27,7 @@ $primary : #9E13CF;
     
 }
 
-.btn {
+.reg-btn {
     font-family: 'Golos';
     font-size: 20px;
     font-weight: 600;
@@ -46,14 +46,14 @@ $primary : #9E13CF;
 
 }
 
-.btn:hover {
+.reg-btn:hover {
     background-color: black;
     box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     border-color: $primary;
     
 }
 
-.footer {
+.reg-footer {
     margin-top: 10px;
 }
 
@@ -68,7 +68,7 @@ $primary : #9E13CF;
     
 }
 
-.full {
+.reg-full {
     margin-top: 70px;
 }
 

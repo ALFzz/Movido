@@ -15,7 +15,7 @@ $primary: #9E13CF;
 
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
 
-  .rating {
+  .card-rating {
     width: 54px;
     height: 38px;
     background-color: $primary;
@@ -32,11 +32,11 @@ $primary: #9E13CF;
   }
 
 
-.inline {
+.card-inline {
   display: inline-block;
 }
 
-.h2-rating{
+.card-h2-rating{
 
     font-family: 'Golos';
     font-size: 1.4rem;
@@ -47,7 +47,7 @@ $primary: #9E13CF;
     
   }
 
-  .name {
+  .card-name {
     position: absolute;
     padding-left: 25px;
     margin-top: -20px;
@@ -57,7 +57,7 @@ $primary: #9E13CF;
     color: white;
   }
 
-  .year {
+  .card-year {
     
     padding-right: 225px;
     margin-top: 15px;
@@ -67,12 +67,12 @@ $primary: #9E13CF;
     color: #CABCBC;
   }
 
-  .anim:hover {
+  .card-anim:hover {
     transform: scale(1.07);
   }
 
 
-.image-card {
+.card-image-card {
     margin: 25px;
     margin-top: 60px;
     margin-bottom: 30px;

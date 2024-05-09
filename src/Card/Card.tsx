@@ -14,17 +14,17 @@ interface IFilm {
 export const Card = (props: IFilm) => {
   return (
     <>
-    <div className='inline'>
-      <div className='anim'>
+    <div className='card-inline'>
+      <div className='card-anim'>
 
-      <div className='rating'>
-        <h2 className='h2-rating'>{props.rating}</h2>
+      <div className='card-rating'>
+        <h2 className='card-h2-rating'>{props.rating}</h2>
       </div>
 
-      <img className='image-card' src= {props.image} alt= {props.title}/>
+      <img className='card-image-card' src= {props.image} alt= {props.title}/>
       </div>
-      <p className='name'>{props.title}</p>
-      <p className='year'>{props.year}</p>
+      <p className='card-name'>{props.title}</p>
+      <p className='card-year'>{props.year}</p>
     </div>
 
 

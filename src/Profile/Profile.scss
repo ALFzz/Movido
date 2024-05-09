@@ -1,6 +1,6 @@
 $primary : #9E13CF;
 
-.cabinet-title {
+.profile-title {
 
     font-family: 'Golos';
     font-weight: 600;
@@ -12,7 +12,7 @@ $primary : #9E13CF;
     
 }
 
-.info-cabinet {
+.profile-cabinet {
     // position: absolute;
     margin-left: 135px;
     text-align: start;
@@ -20,14 +20,14 @@ $primary : #9E13CF;
 
 }
 
-.info-title {
+.profile-info-title {
     margin-top: 30px;
     font-family: 'Golos';
     font-weight: 600;
     // font-size: 40px;
 }
 
-.info-ans {
+.profile-info-ans {
     margin-top: -39px;
     margin-left: 140px;
     font-family: 'Golos';
@@ -35,7 +35,7 @@ $primary : #9E13CF;
     // font-size: 40px;
 }
 
-.email-cabinet-title {
+.profile-email-title {
     position: absolute;
     font-family: 'Golos';
     font-weight: 600;
@@ -47,7 +47,7 @@ $primary : #9E13CF;
     
 }
 
-.fav-title {
+.profile-fav-title {
     font-family: 'Golos';
     position: absolute;
     font-weight: 600;
@@ -58,14 +58,14 @@ $primary : #9E13CF;
     margin-top: -196px;
 }
 
-.bas {
+.profile-bas {
     // position: absolute;
     margin-left: 730px;
     width: 500px;
     margin-top: -101px;
 }
 
-.fas {
+.profile-fas {
     font-family: 'Golos';
     //  position: absolute;
     font-weight: 500;
@@ -77,11 +77,11 @@ $primary : #9E13CF;
 
 
 
-.wrap {
+.profile-wrap {
     margin-bottom: 10px;
 }
 
-.btn {
+.profile-btn {
     font-family: 'Golos';
     font-size: 20px;
     font-weight: 600;
@@ -100,7 +100,7 @@ $primary : #9E13CF;
 
 }
 
-.btn:hover {
+.profile-btn:hover {
     background-color: black;
     box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     border-color: $primary;
@@ -108,7 +108,7 @@ $primary : #9E13CF;
 }
 
 
-.full {
+.profile-full {
     // position: relative;
     margin-top: 60px;
     margin-bottom: 100p

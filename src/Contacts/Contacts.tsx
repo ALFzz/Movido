@@ -15,9 +15,9 @@ export function Contacts() {
 
     <div>
 
-      <h1 className='title'>Контакты</h1> <br /> <br />
+      <h1 className='contacts-title'>Контакты</h1> <br /> <br />
 
-      <h2 className='subtitle'>ООО «Movido» <br /><br/> 
+      <h2 className='contacts-subtitle'>ООО «Movido» <br /><br/> 
       Адрес Местонахождения: 161343, Россия, г. Москва,
       ул. Примерная, д. 123, офис 456 <br /> <br />
 
@@ -34,7 +34,7 @@ export function Contacts() {
       
     </div> 
 
-    <div className='footer position-absolute  start-0 end-0 '>
+    <div className='contacts-footer position-absolute  start-0 end-0 '>
       <Footer/>
     </div>
     

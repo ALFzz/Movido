@@ -1,6 +1,6 @@
 $primary : #9E13CF;
 
-.email {
+.auth-email {
     width: 500px;
     margin-left: 500px;
     margin-top: 40px;
@@ -9,7 +9,7 @@ $primary : #9E13CF;
     
 }
 
-.password {
+.auth-password {
     width: 500px;
     margin-left: 500px;
     margin-top:130px;
@@ -18,7 +18,7 @@ $primary : #9E13CF;
     
 }
 
-.btn {
+.auth-btn {
     font-family: 'Golos';
     font-size: 20px;
     font-weight: 600;
@@ -26,7 +26,7 @@ $primary : #9E13CF;
     width: 350px;
     height: 70px;
     // position: absolute;
-    margin-top: 230px;
+    margin-top: 240px;
     z-index: 1;
     border-radius: 50px;
     border: 3px solid $primary;
@@ -37,18 +37,18 @@ $primary : #9E13CF;
 
 }
 
-.btn:hover {
+.auth-btn:hover {
     background-color: black;
     box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     border-color: $primary;
     
 }
 
-.footer {
+.auth-footer {
     margin-top: 70px;
 }
 
-.reg-title {
+.auth-reg-title {
     // position: relative;
     margin-top: 60px;
     margin-bottom: 0;
@@ -59,7 +59,7 @@ $primary : #9E13CF;
     
 }
 
-.full {
+.auth-full {
     margin-top: 100px;
 }
 

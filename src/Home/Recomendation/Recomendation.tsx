@@ -16,9 +16,9 @@ export const Recommendation =
 
     return (
         <>
-            <h1 className="title">{props.header}</h1>
-            <h2 className='subtitle'>{props.subtitle}</h2>
-            <div className='arr'>
+            <h1 className="rec-title">{props.header}</h1>
+            <h2 className='rec-subtitle'>{props.subtitle}</h2>
+            <div className='rec-arr'>
 
             
             {recommend.map(film => <Card  title={film.title } image={film.image} rating={film.rating} year={film.year} alt={film.title}/>)}

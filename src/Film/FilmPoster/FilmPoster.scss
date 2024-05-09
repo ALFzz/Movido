@@ -1,7 +1,7 @@
 $primary : #9E13CF;
 
 
-.big-image {
+.film-big-image {
     width: 60%;
     margin-left: 592px;
     height: 500px;
@@ -14,7 +14,7 @@ $primary : #9E13CF;
     
 }
 
-.cont {
+.film-cont {
     // width: 100%;
     height: 500px;
     background: linear-gradient(0deg, $primary, black );
@@ -23,7 +23,7 @@ $primary : #9E13CF;
     // animation: gradient 7s ease infinite;
 }
 
-.blacker_blur {
+.film-blacker_blur {
 
     width: 700px;
     height: 520px;
@@ -45,7 +45,7 @@ $primary : #9E13CF;
    margin-left: 135px;
 }
 
-.rate {
+.film-rate {
     position: absolute;
     margin-top: 190px;
     margin-left: 135px;
@@ -57,7 +57,7 @@ $primary : #9E13CF;
    font-weight: 500;
 }
 
-.year {
+.film-year {
     position: absolute;
     margin-top: 190px;
     margin-left: 175px;
@@ -69,7 +69,7 @@ $primary : #9E13CF;
    font-weight: 600;
 }
 
-.genres {
+.film-genres {
     position: absolute;
     margin-top: 240px;
     margin-left: 135px;
@@ -81,7 +81,7 @@ $primary : #9E13CF;
     font-size: 17px;
    font-weight: 600;
 }
-.description {
+.film-description {
     position: absolute;
     margin-top: 290px;
     margin-left: 135px;
@@ -95,7 +95,7 @@ $primary : #9E13CF;
 }
 
 
-.pos {
+.film-pos {
     position: absolute;
     margin-top: 360px;
     margin-left: 520px;
@@ -106,7 +106,7 @@ $primary : #9E13CF;
 
 
 
-.btn {
+.film-btn {
     font-family: 'Golos';
     font-size: 20px;
     font-weight: 600;
@@ -128,7 +128,7 @@ $primary : #9E13CF;
 
 
 
-.line {
+.film-line {
     position: absolute;
     
     margin-top: 500px;
@@ -139,7 +139,7 @@ $primary : #9E13CF;
     // z-index: 1;
 }
 
-.btn:hover {
+.film-btn:hover {
     background-color: black;
     box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     border-color: $primary;
