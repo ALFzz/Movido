@@ -30,6 +30,8 @@ a:hover {
 body {
 
   /* height: 5000px; */
+  /* min-height: 100%; */
+  position: relative;
   background-color: black;
   padding-top: 70px;
   margin: 0;

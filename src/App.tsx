@@ -32,7 +32,7 @@ function App() {
 
      {/* <Autorization/> */}
 
-     <Profile/>
+     {/* <Profile/> */}
 
      
 
@@ -41,7 +41,7 @@ function App() {
 
       {/* <FAQ/> */}
 
-      {/* <Catalog/> */}
+      <Catalog/>
     </>
   )
 }
