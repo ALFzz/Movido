@@ -12,7 +12,7 @@ const User = sequelized.define('user', {
 
 const Genre = sequelized.define('genre', {
     id: {type: INTEGER, primaryKey: true, autoIncrement: true},
-    name: {type: STRING, unique: true, allowNull: false}
+    name: {type: STRING, unique: true}
 })
 
 const Film = sequelized.define('film', {
