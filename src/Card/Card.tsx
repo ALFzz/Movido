@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import './Card.scss'
+import { FILM_ROUTE } from '../utils/consts';
 // 
 
 interface IFilm {
+  id: number,
   title: string,
   image: string,
   rating: number,
@@ -11,10 +14,12 @@ interface IFilm {
 }
 
 
-export const Card = (props: IFilm) => {
+export const Card = (props) => {
+  const navigate = useNavigate()
+  console.log(props.id)
   return (
     <>
-    <div className='card-inline'>
+    <div className='card-inline ' onClick={() => navigate(FILM_ROUTE + '/' + props.id)}>
       <div className='card-anim'>
 
       <div className='card-rating'>

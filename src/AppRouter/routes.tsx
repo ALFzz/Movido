@@ -2,7 +2,6 @@ import { Component, useState } from 'react'
 import { Catalog } from '../Catalog';
 import { Home } from '../Home';
 import { Poster } from '../Home/Poster/Poster';
-import { Header } from '../Header/Header';
 // import { Answer } from './Answer/Answer';
 import { FAQ } from '../FAQ';
 import { Contacts } from '../Contacts/Contacts';
