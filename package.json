@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/node-fetch": "^2.6.11",
+    "axios": "^1.6.8",
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
@@ -18,6 +19,8 @@
     "express": "^4.19.2",
     "express-fileupload": "^1.5.0",
     "jsonwebtoken": "^9.0.2",
+    "mobx": "^6.12.3",
+    "mobx-react-lite": "^4.0.7",
     "pg": "^8.11.5",
     "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
