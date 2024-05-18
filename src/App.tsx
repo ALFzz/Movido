@@ -14,47 +14,15 @@ import {Registration} from './Registration/Registration'
 import { Autorization } from './Authorization/Authorization';
 import { Profile } from './Profile/Profile';
 import { Heart } from './Film/Heart/Heart';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {AppRouter} from './AppRouter/AppRouter'
+import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 
 
 function App() {
   const [count, setCount] = useState(0)
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home/>
-    },
-    {
-      path: "/catalog",
-      element: <Catalog/>
-    },
-    {
-      path: '/auth',
-      element: <Autorization/>
-    },
-    {
-      path: '/reg',
-      element: <Registration/>
-    },
-    {
-      path: '/profile',
-      element: <Profile/>
-    },
-    {
-      path: '/contacts',
-      element: <Contacts/>
-    },
-    {
-      path: '/aboutus',
-      element: <AboutUs/>
-    },
-    {
-      path: '/faq',
-      element: <FAQ/>
-    }
-  ])
+  
 
   return (
     <>
@@ -72,7 +40,11 @@ function App() {
 
      {/* <Profile/> */}
 
-     <RouterProvider router={router}/>
+     {/* <RouterProvider router={router}/> */}
+
+     <BrowserRouter>
+        <AppRouter/>
+     </BrowserRouter>
 
       {/* <Film/> */}
 

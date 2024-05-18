@@ -20,7 +20,7 @@ export const Header = () => {
 
           <Nav  > 
             <Nav.Link className='head-enter'   href="/auth">Вход</Nav.Link>
-            <Nav.Link  className='head-reg' href="/reg">Регистрация</Nav.Link>
+            <Nav.Link  className='head-reg' href="/registration">Регистрация</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
