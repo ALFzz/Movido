@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Catalog } from './Catalog';
@@ -15,44 +15,38 @@ import { Profile } from './Profile/Profile';
 import { Heart } from './Film/Heart/Heart';
 import {AppRouter} from './AppRouter/AppRouter'
 import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { observer } from 'mobx-react-lite';
+import { Context } from './main';
+import { check } from './http/userAPI';
 
 
 
-function App() {
+const  App = observer(() => {
   const [count, setCount] = useState(0)
+  const {user} =  useContext(Context)
+  const [loading, setLoading] = useState(true)
 
+  useEffect(() => {
+    check().then(data => {
+      user.setUser(true)
+      user.setIsAuth(true)
+    }).finally(() => setLoading(false))
+  }, [])
   
 
   return (
     <>
 
 
-      {/* <Home/> */}
 
-      {/* <Contacts/> */}
-
-     {/* <AboutUs/> */}
-
-     {/* <Registration/> */}
-
-     {/* <Autorization/> */}
-
-     {/* <Profile/> */}
-
-     {/* <RouterProvider router={router}/> */}
 
      <BrowserRouter>
         <AppRouter/>
      </BrowserRouter>
 
-      {/* <Film/> */}
-
-
-      {/* <FAQ/> */}
-
-      {/* <Catalog/> */}
+ 
     </>
   )
-}
+})
 
 export default App

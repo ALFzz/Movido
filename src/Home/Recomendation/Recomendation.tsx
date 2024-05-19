@@ -1,10 +1,10 @@
 import './Recomendation.scss'
 // import films from '../../films.json'
 import { Card } from '../../Card/Card'
-import { useContext } from 'react';
 import { Context } from '../../main';
-
-
+import { useContext, useEffect, useState } from 'react'
+import { fetchFilms } from '../../http/FilmAPI';
+import { FilmList } from '../../Card/FilmList';
 interface IRecommend {
     header: string;
     subtitle: string;
@@ -13,8 +13,12 @@ interface IRecommend {
 export const Recommendation = 
 (props: IRecommend) => {
     const {film} = useContext(Context)
-
-    const recommend = film.films.slice(0, 4) 
+    
+    // расскоментируй useEffect чтообы загрузить с сервера
+    // useEffect(() => {
+    //     fetchFilms().then(data => film.setFilms(data))
+    //   }, [])
+    // const recommend = film.films.slice(0, 2) 
 
     return (
         <>
@@ -23,7 +27,7 @@ export const Recommendation =
             <div className='rec-arr'>
 
             
-            {recommend.map(film => <Card  title={film.title } image={film.image} rating={film.rating} year={film.year} alt={film.title}/>)}
+            <FilmList/>
 
 
    
