@@ -16,7 +16,7 @@ interface IFilm {
 
 export const Card = (props) => {
   const navigate = useNavigate()
-  console.log(props.id)
+  // console.log(props.id)
   return (
     <>
     <div className='card-inline ' onClick={() => navigate(FILM_ROUTE + '/' + props.id)}>

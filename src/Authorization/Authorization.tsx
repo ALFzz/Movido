@@ -5,24 +5,40 @@ import { Header } from '../Header/Header';
 import { Button } from 'react-bootstrap';
 import { Footer } from '../Footer/Footer';
 import { login, registration } from '../http/userAPI';
-import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import { LOGIN_ROUTE } from '../utils/consts';
+import { useContext, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { HOME_ROUTE, LOGIN_ROUTE } from '../utils/consts';
+import { observer } from 'mobx-react-lite';
+import { Context } from '../main';
 
-export function Autorization() {
+export const Autorization = observer(() => {
+    const {user} = useContext(Context)
     const location = useLocation()
+    const navigate = useNavigate()
     const isLogin = location.pathname === LOGIN_ROUTE
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
     const click = async () => {
-        if (isLogin) {
-            const response = await login(email, password)
-            console.log(response)
-        } else {
-            const response = await registration(email, password)
-            console.log(response)
+
+        try{
+            let data
+            if (isLogin) {
+                data = await login(email, password)
+    
+            } else {
+                data = await registration(email, password)
+                
+            }
+            user.setUser(data)
+            user.setIsAuth(true)
+            navigate(HOME_ROUTE)
         }
+        catch (err: any) {
+            alert(err.response.data.message)
+        }
+        
     }
 
 
@@ -66,4 +82,4 @@ export function Autorization() {
     
         </>
     )
-}
+})
