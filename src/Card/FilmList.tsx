@@ -15,16 +15,16 @@ import { Context } from '../main';
 export const FilmList = observer(() => {
   const {film} = useContext(Context)
   
-//   useEffect(() => {
-//     fetchFilms().then(data => film.setFilms(data))
-//   })
+  // useEffect(() => {
+  //   fetchFilms().then(data => film.setFilms(data))
+  // })
 
   return (
     <>
     
     
     {/* {films.map(film => <Card  title={film.title } image={film.image} rating={film.rating} year={film.year} alt={film.title}/>)} */}
-    {film.films.map(film => <Card id={film.id} key={film.id} title={film.title } image={film.image} rating={film.rating} year={film.year} alt={film.title}/>)}
+    {film.films.map(film => <Card key={film.id} film={film}/>)}
 
     
 

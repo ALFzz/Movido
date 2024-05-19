@@ -3,33 +3,25 @@ import './Card.scss'
 import { FILM_ROUTE } from '../utils/consts';
 // 
 
-interface IFilm {
-  id: number,
-  title: string,
-  image: string,
-  rating: number,
-  year: number,
-  alt: string;
-
-}
 
 
-export const Card = (props) => {
+
+export const Card = ({film}) => {
   const navigate = useNavigate()
-  // console.log(props.id)
+   console.log()
   return (
     <>
-    <div className='card-inline ' onClick={() => navigate(FILM_ROUTE + '/' + props.id)}>
+    <div className='card-inline ' onClick={() => navigate(FILM_ROUTE + '/' + film.id)}>
       <div className='card-anim'>
 
       <div className='card-rating'>
-        <h2 className='card-h2-rating'>{props.rating}</h2>
+        <h2 className='card-h2-rating'>{film.rating}</h2>
       </div>
 
-      <img className='card-image-card' src= {props.image} alt= {props.title}/>
+      <img className='card-image-card' src= {'http://localhost:5000/' + film.img_card} alt= {film.name}/>
       </div>
-      <p className='card-name'>{props.title}</p>
-      <p className='card-year'>{props.year}</p>
+      <p className='card-name'>{film.name}</p>
+      <p className='card-year'>{film.release_year}</p>
     </div>
 
 
