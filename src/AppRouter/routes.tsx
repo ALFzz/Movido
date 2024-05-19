@@ -12,7 +12,7 @@ import { Autorization } from '../Authorization/Authorization';
 import { Profile } from '../Profile/Profile';
 // import { Heart } from './Film/Heart/Heart';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { ABOUT_US_ROUTE, ADMIN_ROUTE, AUTH_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, FAQ_ROUTE, FILM_ROUTE, HOME_ROUTE, PROFILE_ROUTE, REGISTRATION_ROUTE } from '../utils/consts';
+import { ABOUT_US_ROUTE, ADMIN_ROUTE, LOGIN_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, FAQ_ROUTE, FILM_ROUTE, HOME_ROUTE, PROFILE_ROUTE, REGISTRATION_ROUTE } from '../utils/consts';
 import { Admin } from '../Admin/Admin';
 
 export const authRoutes = [
@@ -33,12 +33,12 @@ export const publicRoutes = [
     Component: <Catalog/>
   },
   {
-    path: AUTH_ROUTE,
+    path: LOGIN_ROUTE,
     Component: <Autorization/>
   },
   {
     path: REGISTRATION_ROUTE,
-    Component: <Registration/>
+    Component: <Autorization/>
   },
   {
     path: PROFILE_ROUTE,

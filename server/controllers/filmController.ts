@@ -9,7 +9,7 @@ class FilmController {
         const {img_card} = req.files
         // const {img_film_page} = req.files[1]
         let filename = uuid.v4()+ ".jpg";
-        // let filename1 = uuid.v4()+ ".jpg";
+        // let filename1 = uuid.v4()+ ".png";
         img_card.mv(path.resolve(__dirname, '..', 'static', filename))
         // img_film_page.mv(path.resolve__dirname, '..', 'static', filename1)
 
