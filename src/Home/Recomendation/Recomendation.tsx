@@ -1,6 +1,8 @@
 import './Recomendation.scss'
-import films from '../../films.json'
+// import films from '../../films.json'
 import { Card } from '../../Card/Card'
+import { useContext } from 'react';
+import { Context } from '../../main';
 
 
 interface IRecommend {
@@ -10,9 +12,9 @@ interface IRecommend {
 
 export const Recommendation = 
 (props: IRecommend) => {
+    const {film} = useContext(Context)
 
-
-    const recommend = films.slice(0, 4) 
+    const recommend = film.films.slice(0, 4) 
 
     return (
         <>

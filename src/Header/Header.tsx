@@ -26,7 +26,7 @@ import { Button } from 'react-bootstrap';
                 </Nav>
     
                 <Nav  > 
-                  <Nav.Link className='head-enter'  onClick={() => user.setIsAuth(true)}  >Вход</Nav.Link>
+                  <Nav.Link className='head-enter'  href='/login'  >Вход</Nav.Link>
                   <Nav.Link  className='head-reg' href="/registration">Регистрация</Nav.Link>
                 </Nav>
               </Container>
