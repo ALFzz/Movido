@@ -1,6 +1,6 @@
 .rec-title {
     position: absolute;
-    margin-top: 80px;
+    margin-top: -50px;
     margin-left: 125px;
     color: white;
      font-family: 'Golos';
@@ -10,9 +10,8 @@
 
 .rec-subtitle {
     position: absolute;
-    margin-top: 145px;
-    
-    margin-left: 125px;
+    margin-top: 15px;
+    margin-left: 130px;
     color: #808080;
     font-family: 'Golos';
     font-weight: 500;
@@ -20,8 +19,16 @@
 }
 
 
+
 .rec-arr {
     // width: 100px ;
-    // position: relative;
-    margin-top: 160px;
+    position: relative;
+    margin-top: 100px;
+    padding-top: 20px;
+
+    margin-bottom: 100px;
+}
+
+.hz {
+    margin-top: 650px;
 }

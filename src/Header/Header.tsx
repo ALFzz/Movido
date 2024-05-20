@@ -26,7 +26,7 @@ import { HOME_ROUTE } from '../utils/consts';
 
           <Navbar className=" fixed-top pb-0 mb-2 border-bottom  head-border-7" bg="black" data-bs-theme="dark">
             <Container >
-            <Navbar.Brand className='head-brand' href="/">Movido</Navbar.Brand>
+            <NavLink className='head-brand text-white' to="/">Movido</NavLink>
               <Nav > 
                 <NavLink className="head-mid-links " to="/">Главная</NavLink>
                 <NavLink className="head-mid-links" to="/catalog"> Все Фильмы</NavLink>
