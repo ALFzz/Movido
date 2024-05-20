@@ -13,7 +13,7 @@ export function FAQ() {
 
   return (
     <>
-    <Header/>     
+    
     
     {faq.map(faq => <Answer question={faq.question} answer={faq.answer}  />)}
 

@@ -8,7 +8,7 @@ export function Profile() {
     return (
 
         <>
-            <Header/>
+            
 
             <div className='profile-full'>
                 <h1 className='profile-title'>Личный кабинет</h1>

@@ -8,7 +8,7 @@ import { FilmInfo } from './FilmInfo/FilmInfo'
 export function Film () {
     return(
         <>
-            <Header/>
+            
 
             <FilmInfo/>
 

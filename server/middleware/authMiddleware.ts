@@ -17,6 +17,6 @@ module.exports = function (req : any, res: Response, next: any) {
     }
     catch(e) {
         
-        res.status(401).json({message: "Не авторизован"})
+        res.status(401).json({message: "Не 11авторизован"})
     }
 }

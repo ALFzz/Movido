@@ -5,7 +5,7 @@ import { Header } from "../Header/Header";
 export function AboutUs() {
     return (
         <>
-            <Header />
+            
 
             <h1 className="about-title">О нас</h1> <br />
 

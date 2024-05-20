@@ -21,7 +21,7 @@ export function Registration() {
     return (
         <>
 
-        <Header/>
+        
 
         <div className='reg-full'>
             <h1 className='reg-title  mb-0'>Регистрация</h1>
