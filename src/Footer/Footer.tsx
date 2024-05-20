@@ -5,6 +5,7 @@ import './Footer.scss'
 import icontg from '/icons/Telegram.svg'
 import iconInstagram from '/icons/Youtube.svg';
 import iconVK from '/icons/Vkontakte.svg';
+import { NavLink } from 'react-router-dom';
 
 
 export const Footer = () => {
@@ -14,9 +15,9 @@ export const Footer = () => {
         <Container >
         <Navbar.Brand className='foot-brand' href="/">Movido</Navbar.Brand>
           <Nav className='foot-wrap' > 
-            <Nav.Link className="foot-mid-links " href="/aboutus">О нас</Nav.Link>
-            <Nav.Link className="foot-mid-links" href="/contacts">Контакты</Nav.Link>
-            <Nav.Link className="foot-mid-links" href="/faq">FAQ</Nav.Link>
+            <NavLink className="foot-mid-links " to="/aboutus">О нас</NavLink>
+            <NavLink className="foot-mid-links" to="/contacts">Контакты</NavLink>
+            <NavLink className="foot-mid-links" to="/faq">FAQ</NavLink>
           </Nav>
 
           <Nav className='foot-right-links' > 

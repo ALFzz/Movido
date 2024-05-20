@@ -1,16 +1,25 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.scss'
 import { useContext } from 'react';
 import { Context } from '../main';
 import { observer } from 'mobx-react-lite';
 import { Button } from 'react-bootstrap';
+import { HOME_ROUTE } from '../utils/consts';
 
 
  export const Header = observer(() => {
+  const navigate = useNavigate()
   const {user} = useContext(Context)
+
+//   const logOut = () => {
+//     user.setUser({})
+//     user.setIsAuth(false)
+//     navigate(HOME_ROUTE)
+
+// }
   
   return (
     <>
@@ -19,19 +28,21 @@ import { Button } from 'react-bootstrap';
             <Container >
             <Navbar.Brand className='head-brand' href="/">Movido</Navbar.Brand>
               <Nav > 
-                <Nav.Link className="head-mid-links " href="/">Главная</Nav.Link>
-                <Nav.Link className="head-mid-links" href="/catalog"> Все Фильмы</Nav.Link>
-                <Nav.Link className="head-mid-links" href="/catalog">Детективы</Nav.Link>
-                <Nav.Link className="head-mid-links" href="/catalog">Боевики</Nav.Link>
+                <NavLink className="head-mid-links " to="/">Главная</NavLink>
+                <NavLink className="head-mid-links" to="/catalog"> Все Фильмы</NavLink>
+                <NavLink className="head-mid-links" to="/catalog">Детективы</NavLink>
+                <NavLink className="head-mid-links" to="/catalog">Боевики</NavLink>
               </Nav>
               {user.isAuth ?
               <Nav>  
-                <Nav.Link  className='head-reg text-white' href="/profile">Личный кабинет</Nav.Link>
+                {/* <NavLink  className='head-reg text-white' onClick={() => logOut()}>Выйти</NavLink> */}
+                <NavLink  className='head-reg text-white' to="/profile">Личный кабинет</NavLink>
+                
               </Nav>   
               :
               <Nav> 
-                <Nav.Link className='head-enter'  href='/login'  >Вход</Nav.Link>
-                <Nav.Link  className='head-reg' href="/registration">Регистрация</Nav.Link>
+                <NavLink className='head-enter'  to='/login'  >Вход</NavLink>
+                <NavLink  className='head-reg' to="/registration">Регистрация</NavLink>
               </Nav>
               }
             </Container>

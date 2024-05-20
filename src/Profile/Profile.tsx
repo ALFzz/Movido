@@ -4,7 +4,22 @@ import './Profile.scss'
 import Table from 'react-bootstrap/Table';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Button } from 'react-bootstrap';
+import { useContext } from 'react';
+import { Context } from '../main';
+import { useNavigate } from 'react-router-dom';
+import { HOME_ROUTE } from '../utils/consts';
 export function Profile() {
+    const navigate = useNavigate()
+    const {user} = useContext(Context)
+
+    const logOut = () => {
+      user.setUser({})
+      user.setIsAuth(false)
+      navigate(HOME_ROUTE)
+    }
+
+
+
     return (
 
         <>
@@ -24,7 +39,7 @@ export function Profile() {
                         <h4 className='profile-info-ans'>qiranem@gmail.com</h4>
                     </span>
 
-                    <Button  className=' profile-btn btn-primary  '>Выйти</Button>
+                    <Button onClick={() => logOut()} className=' profile-btn btn-primary  '>Выйти</Button>
                 </div>
 
                 <h1 className='profile-fav-title'>Любимые Фильмы</h1>
