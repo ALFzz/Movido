@@ -18,6 +18,8 @@ import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router
 import { observer } from 'mobx-react-lite';
 import { Context } from './main';
 import { check } from './http/userAPI';
+import { Header } from './Header/Header';
+import { Spinner } from 'react-bootstrap';
 
 
 
@@ -32,6 +34,10 @@ const  App = observer(() => {
       user.setIsAuth(true)
     }).finally(() => setLoading(false))
   }, [])
+
+  if (loading) {
+    return <Spinner animation={"grow"}/>
+}
   
 
   return (
@@ -41,6 +47,7 @@ const  App = observer(() => {
 
 
      <BrowserRouter>
+        <Header/>
         <AppRouter/>
      </BrowserRouter>
 

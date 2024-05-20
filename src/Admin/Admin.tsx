@@ -7,7 +7,7 @@ import { Header } from '../Header/Header'
 export function Admin () {
     return(
         <>
-            <Header/>
+            
                 <p>чхели</p>
 
             <Footer/>

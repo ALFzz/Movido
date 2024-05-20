@@ -31,7 +31,7 @@ export const Autorization = observer(() => {
                 data = await registration(email, password)
                 
             }
-            user.setUser(data)
+            user.setUser(user)
             user.setIsAuth(true)
             navigate(HOME_ROUTE)
         }
@@ -45,7 +45,7 @@ export const Autorization = observer(() => {
     return (
         <>
 
-        <Header/>
+       
 
         <div className='auth-full'>
             <h1 className='auth-reg-title  mb-0'>{isLogin ? "Вход" : "Регистрация"}</h1>

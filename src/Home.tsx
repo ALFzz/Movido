@@ -8,7 +8,7 @@ export function Home() {
 
     return (
         <>
-            <Header/>
+            
             <Poster/>
             <Recommendation header="Фильмы недели" subtitle="Только свежие новинки"/>
             <Recommendation header="Фильмы недели" subtitle="Только свежие новинки"/>
