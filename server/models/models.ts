@@ -1,4 +1,4 @@
-import { DECIMAL, INTEGER, STRING } from "sequelize";
+import { DECIMAL, FLOAT, INTEGER, STRING, TEXT } from "sequelize";
 
 const sequelized = require('../db');
 const {DataTypes} = require('sequelize');
@@ -21,9 +21,9 @@ const Film = sequelized.define('film', {
     name: {type: STRING, allowNull: false},
     director: {type: STRING, allowNull: false},
     release_year: {type: INTEGER, allowNull: false},
-    rating: {type: INTEGER, allowNull: false},
+    rating: {type: FLOAT, allowNull: false},
     small_description: {type: STRING, allowNull: false},
-    big_description: {type: STRING, allowNull: false},
+    big_description: {type: TEXT, allowNull: false},
     country: {type: STRING, allowNull: true},
     img_card: {type: STRING, },
     img_film_page: {type: STRING,}
