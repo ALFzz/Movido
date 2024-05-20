@@ -30,25 +30,28 @@ const Film = sequelized.define('film', {
 
 })
 
-const Favourites = sequelized.define('favourite', {
-    id: {type: INTEGER, primaryKey: true, autoIncrement: true}
-})
+Genre.hasMany(Film)
+Film.belongsTo(Genre)
 
-const Film_Genres = sequelized.define('film_genres', {
-    id: {type: INTEGER, primaryKey: true, autoIncrement: true}
-})
+// const Favourites = sequelized.define('favourite', {
+//     id: {type: INTEGER, primaryKey: true, autoIncrement: true}
+// })
 
-Film.belongsToMany(User, {through: Favourites})
-User.belongsToMany(Film, {through: Favourites})
+// const Film_Genres = sequelized.define('film_genres', {
+//     id: {type: INTEGER, primaryKey: true, autoIncrement: true}
+// })
 
-Film.belongsToMany(Genre, {through: Film_Genres})
-Genre.belongsToMany(Film, {through: Film_Genres})
+// Film.belongsToMany(User, {through: Favourites})
+// User.belongsToMany(Film, {through: Favourites})
+
+// Film.belongsToMany(Genre, {through: Film_Genres})
+// Genre.belongsToMany(Film, {through: Film_Genres})
 
 module.exports = {
     User,
     Genre,
     Film,
-    Favourites,
-    Film_Genres,
+    // Favourites,
+    // Film_Genres,
 }
 

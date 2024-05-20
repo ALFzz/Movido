@@ -9,16 +9,44 @@ import { Footer } from './Footer/Footer';
 import { Context } from './main';
 import { observer } from 'mobx-react-lite';
 import { FilmList } from './Card/FilmList';
-import { fetchFilms } from './http/FilmAPI';
+import { fetchFilms,  } from './http/FilmAPI';
 
 
 
 
 export const Catalog = observer(() => {
   const {film} = useContext(Context)
+  // for (let i = 0; i < film.length; i++){
+  //   console.log(film[i].genreId)
+  //   if (film[i].genreId != 2) { film.splice(i, 1)} 
+     
+  // }
+  
 
   useEffect(() => {
-    fetchFilms().then(data => film.setFilms(data))
+    // console.log()
+    fetchFilms().then(data => {
+      // let i = 4
+
+      // do {
+      //   console.log(data)
+      //    console.log(i)
+      //   if (data[i].genreId != 2) { data.splice(i, 1)} 
+      //   else {console.log("goods")}
+      //   i++
+      // }
+      // while(i < data.length) 
+      // data.splice(i,1)
+      // console.log(data)
+      // film.setFilmsByGenre(data, 1)
+      film.setFilms(data)
+      
+    }
+      
+      
+    )  
+
+ 
   }, [])
   
 
