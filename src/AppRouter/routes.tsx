@@ -14,6 +14,9 @@ import { Profile } from '../Profile/Profile';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { ABOUT_US_ROUTE, ADMIN_ROUTE, LOGIN_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, FAQ_ROUTE, FILM_ROUTE, HOME_ROUTE, PROFILE_ROUTE, REGISTRATION_ROUTE } from '../utils/consts';
 import { Admin } from '../Admin/Admin';
+import { FilmList } from '../Card/FilmList';
+import { Detectives } from '../Detectives/Detectives';
+import { Actions } from '../Actions/Actions';
 
 export const authRoutes = [
   {
@@ -55,6 +58,14 @@ export const publicRoutes = [
   {
     path: FAQ_ROUTE,
     Component: <FAQ/>
+  },
+  {
+    path: '/actions',
+    Component: <Actions/>
+  },
+  {
+    path: '/detectives',
+    Component: <Detectives/>
   },
   {
     path: FILM_ROUTE + '/:id',

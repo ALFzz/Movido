@@ -30,8 +30,8 @@ import { HOME_ROUTE } from '../utils/consts';
               <Nav > 
                 <NavLink className="head-mid-links " to="/">Главная</NavLink>
                 <NavLink className="head-mid-links" to="/catalog"> Все Фильмы</NavLink>
-                <NavLink className="head-mid-links" to="/catalog">Детективы</NavLink>
-                <NavLink className="head-mid-links" to="/catalog">Боевики</NavLink>
+                <NavLink className="head-mid-links" to="/detectives">Детективы</NavLink>
+                <NavLink className="head-mid-links" to="/actions">Боевики</NavLink>
               </Nav>
               {user.isAuth ?
               <Nav>  
