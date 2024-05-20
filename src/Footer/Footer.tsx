@@ -13,7 +13,7 @@ export const Footer = () => {
     <>
       <Navbar className="foot-bot    border-top head-border-7" bg="black" data-bs-theme="dark">
         <Container >
-        <Navbar.Brand className='foot-brand' href="/">Movido</Navbar.Brand>
+        <NavLink className='foot-brand text-white' to="/">Movido</NavLink>
           <Nav className='foot-wrap' > 
             <NavLink className="foot-mid-links " to="/aboutus">О нас</NavLink>
             <NavLink className="foot-mid-links" to="/contacts">Контакты</NavLink>
