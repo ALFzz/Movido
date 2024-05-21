@@ -61,7 +61,7 @@ export class FilmStore {
     setFilmsByGenre(films: any, genre1: any) {
         for (let i = 0; i < films.length; i++){
 
-            console.log(i)
+            // console.log(i)
             if (films[i].genreId != genre1)
                  { 
                     films.splice(i, 1)
@@ -80,9 +80,6 @@ export class FilmStore {
         return this._genres;
     }
 
-    get genre() {
-        return this._genreId
-    }
 
     get films() {
         return this._films;

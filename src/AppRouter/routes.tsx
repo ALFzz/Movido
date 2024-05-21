@@ -6,7 +6,7 @@ import { Poster } from '../Home/Poster/Poster';
 import { FAQ } from '../FAQ';
 import { Contacts } from '../Contacts/Contacts';
 import { AboutUs } from '../AboutUs/AboutUs';
-import { Film } from '../Film/Film';
+import { FilmPage } from '../Film/FilmPage';
 import {Registration} from '../Registration/Registration'
 import { Autorization } from '../Authorization/Authorization';
 import { Profile } from '../Profile/Profile';
@@ -69,6 +69,6 @@ export const publicRoutes = [
   },
   {
     path: FILM_ROUTE + '/:id',
-    Component: <Film/>
+    Component: <FilmPage/>
   }
 ]

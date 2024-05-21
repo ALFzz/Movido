@@ -26,7 +26,10 @@ class FilmController {
 
 
 
-    async getOne(req: Request, res: Response): Promise<void> {
+    async getOne(req: Request, res: Response): Promise<Record<string, any>> {
+        const {id} = req.params
+        const film = await Film.findOne({where: {id}})
+        return res.json(film)
         
     }
 }
