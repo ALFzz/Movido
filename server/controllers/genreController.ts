@@ -8,8 +8,9 @@ class GenreController {
         return res.json(genre)
     }
 
-    async getAll(req: Request, res: Response): Promise<void> {
-        
+    async getAll(req: Request, res: Response): Promise<Record<string, any>> {
+        const genres = await Genre.findAll()
+        return res.json(genres)
     }
 
 }
