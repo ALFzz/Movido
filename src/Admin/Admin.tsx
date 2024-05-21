@@ -8,7 +8,7 @@ export function Admin () {
     return(
         <>
             
-                <p>чхели</p>
+                <img src="/public/1+1.jpg" alt="" />
 
             <Footer/>
 
