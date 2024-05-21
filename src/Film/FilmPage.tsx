@@ -9,13 +9,14 @@ import { useEffect, useState } from 'react'
 import { fetchOneFilm } from '../http/FilmAPI'
 
 enum Genre {
-    
+    Детектив = 1,
+    Боевик = 2
 
 }
 
 export function FilmPage () {
-    const [film, setFilm] = useState<any>({genre: []})
-    
+    const [film, setFilm] = useState<any>({})
+    const genre: string = Genre[film.genreId] 
     const {id} = useParams()
     // console.log(params)
     useEffect(() => {
@@ -59,7 +60,7 @@ export function FilmPage () {
                         <p className='film-year'>{film.release_year}</p>
                     </span>
 
-                    <h3 className='film-genres'>{film.genreId}</h3>
+                    <h3 className='film-genres'>{genre}</h3>
 
                     <h3 className='film-description'>{film.small_description}</h3>
                     
@@ -90,7 +91,7 @@ export function FilmPage () {
 
                 <span>
                     <h2 className='filminfo-info-desc'>Жанр</h2>
-                    <h2 className='filminfo-info-ans'>{film.genreId}</h2>
+                    <h2 className='filminfo-info-ans'>{genre}</h2>
                 </span>
 
                 <span>
