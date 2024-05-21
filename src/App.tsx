@@ -8,7 +8,7 @@ import { Answer } from './Answer/Answer';
 import { FAQ } from './FAQ';
 import { Contacts } from './Contacts/Contacts';
 import { AboutUs } from './AboutUs/AboutUs';
-import { Film } from './Film/Film';
+import { Film } from './Film/FilmPage';
 import {Registration} from './Registration/Registration'
 import { Autorization } from './Authorization/Authorization';
 import { Profile } from './Profile/Profile';

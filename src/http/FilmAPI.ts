@@ -6,10 +6,6 @@ export const createFilm = async (film) => {
     return data
 }
 
-export const fetchB = async (genreId) => {
-    const {data} = await $host.get('api/film/' + genreId);
-    return data
-}
 
 export const fetchFilms = async () => {
     const {data} = await $host.get('api/film',);
