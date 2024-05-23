@@ -3,49 +3,9 @@ import { makeAutoObservable } from "mobx";
 export class FilmStore {
     
     constructor() {
-        this._genres = [
-            {id: 1, name: "Драма"},
-            {id: 2, name: "Комедия"}
-        ]
-        this._films = [
-            {
-                id: 1,
-                image : "./se7en.jpg",
-                title : "Семь",
-                rating: 9.2,
-                year: 1995
-                
-            },
-            {
-                id: 2,
-                image : "./sherlock.jpg",
-                title : "Шерлок Холмс",
-                rating: 7.6,
-                year: 2009
-            },
-            {
-                id: 3,
-                image : "./taxi.jpg",
-                title : "Такси",
-                rating: 8.5,
-                year: 1998
-            },
-            {
-                id: 4,
-                image : "./zodiac.jpg",
-                title : "Зодиак",
-                rating: 8.7,
-                year: 2007
-            },
-            {
-                id: 5,
-                image: "./1+1.jpg",
-                title: "1+1",
-                rating: 9.4,
-                year: 2001
-            },
-
-        ]
+        this._genres = []
+        this._films = []
+        this._selectedGenre = {}
         makeAutoObservable(this)
 
     }
@@ -74,6 +34,15 @@ export class FilmStore {
         console.log(films)
         this._films = films;
     }
+
+    setSelectedGenre(genre: any) {
+        // console.log(genre)
+        this._selectedGenre = genre;
+    }
+
+    get selectedGenre() {
+        return this._selectedGenre;
+    }
     
 
     get genres() {
@@ -90,4 +59,5 @@ export class FilmStore {
     _genres: any
     _user: any
     _genreId: any
+    _selectedGenre: any
 }

@@ -2,7 +2,7 @@ import { $authHost, $host } from "./index";
 import { jwtDecode } from "jwt-decode";
 
 export const createFilm = async (film) => {
-    const {data} = await $authHost.post('api/film', film); 
+    const {data} = await $host.post('api/film', film); 
     return data
 }
 
