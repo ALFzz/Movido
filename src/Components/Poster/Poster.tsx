@@ -20,34 +20,34 @@ export const Poster = () => {
                 <br/>
                 <div className='head-slide'>
                     <div className='head-wrap head-img-slide '>
-                        <img className='head-img mt-5' src='/casino.jpg'/>
-                        <img className='head-img mt-5' src='/wolf.jpg'/>
-                        <img className='head-img mt-5' src='/incredibles.jpg'/>
-                        <img className='head-img mt-5' src='/black.jpg'/>
-                        <img className='head-img mt-5' src='/knives out.jpg'/>
-                        <img className='head-img mt-5' src='/wolf.jpg'/>
-                        <img className='head-img mt-5' src='/se7en.jpg'/>
-                        <img className='head-img mt-5' src='/sherlock.jpg'/>
-                        <img className='head-img mt-5' src='/truman.jpg'/>
-                        <img className='head-img mt-5' src='/zodiac.jpg'/>
-                        <img className='head-img mt-5' src='/1+1.jpg'/>
-                        <img className='head-img mt-5' src='/taxi.jpg'/>
-                        <img className='head-img mt-5' src='/casino.jpg'/>
+                        <img className='head-img mt-5' src='/small/casino.jpg'/>
+                        <img className='head-img mt-5' src='/small//wolf.jpg'/>
+                        <img className='head-img mt-5' src='/small//incredibles.jpg'/>
+                        <img className='head-img mt-5' src='/small//black.jpg'/>
+                        <img className='head-img mt-5' src='/small//knives out.jpg'/>
+                        <img className='head-img mt-5' src='/small//wolf.jpg'/>
+                        <img className='head-img mt-5' src='/small//se7en.jpg'/>
+                        <img className='head-img mt-5' src='/small//sherlock.jpg'/>
+                        <img className='head-img mt-5' src='/small//truman.jpg'/>
+                        <img className='head-img mt-5' src='/small//zodiac.jpg'/>
+                        <img className='head-img mt-5' src='/small//1+1.jpg'/>
+                        <img className='head-img mt-5' src='/small//taxi.jpg'/>
+                        <img className='head-img mt-5' src='/small//casino.jpg'/>
                     </div>
                     <div className='head-wrap head-img-slide '>
-                        <img className='head-img mt-5' src='/casino.jpg'/>
-                        <img className='head-img mt-5' src='/wolf.jpg'/>
-                        <img className='head-img mt-5' src='/incredibles.jpg'/>
-                        <img className='head-img mt-5' src='/black.jpg'/>
-                        <img className='head-img mt-5' src='/knives out.jpg'/>
-                        <img className='head-img mt-5' src='/wolf.jpg'/>
-                        <img className='head-img mt-5' src='/se7en.jpg'/>
-                        <img className='head-img mt-5' src='/sherlock.jpg'/>
-                        <img className='head-img mt-5' src='/truman.jpg'/>
-                        <img className='head-img mt-5' src='/zodiac.jpg'/>
-                        <img className='head-img mt-5' src='/1+1.jpg'/>
-                        <img className='head-img mt-5' src='/taxi.jpg'/>
-                        <img className='head-img mt-5' src='/casino.jpg'/>
+                        <img className='head-img mt-5' src='/small/casino.jpg'/>
+                        <img className='head-img mt-5' src='/small//wolf.jpg'/>
+                        <img className='head-img mt-5' src='/small//incredibles.jpg'/>
+                        <img className='head-img mt-5' src='/small//black.jpg'/>
+                        <img className='head-img mt-5' src='/small//knives out.jpg'/>
+                        <img className='head-img mt-5' src='/small//wolf.jpg'/>
+                        <img className='head-img mt-5' src='/small//se7en.jpg'/>
+                        <img className='head-img mt-5' src='/small//sherlock.jpg'/>
+                        <img className='head-img mt-5' src='/small//truman.jpg'/>
+                        <img className='head-img mt-5' src='/small//zodiac.jpg'/>
+                        <img className='head-img mt-5' src='/small//1+1.jpg'/>
+                        <img className='head-img mt-5' src='/small//taxi.jpg'/>
+                        <img className='head-img mt-5' src='/small//casino.jpg'/>
                     </div>
                 </div>
                 

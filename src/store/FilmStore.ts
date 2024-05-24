@@ -1,4 +1,5 @@
 import { makeAutoObservable } from "mobx";
+import {_} from 'lodash'
 
 export class FilmStore {
     
@@ -31,8 +32,26 @@ export class FilmStore {
                  } 
              
           }
-        console.log(films)
+        // console.log(films)
         this._films = films;
+    }
+
+    setFilmsByYear(films: any) {
+
+        films = _.sortBy(films, 'release_year')
+        // console.log(films)
+        const f = films.slice(0, 1)
+        console.log(f)
+        this._films = f;
+    }
+
+    setFilmsByYearReverse(films: any) {
+        films = _.sortBy(films, 'release_year')
+        // console.log(films)
+        const f = films.slice(0, 2)
+        f.reverse()
+        console.log(f)
+        this._films = f;
     }
 
     setSelectedGenre(genre: any) {

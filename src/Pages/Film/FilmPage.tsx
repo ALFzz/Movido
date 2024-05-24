@@ -46,7 +46,9 @@ export function FilmPage () {
         <>
              <div className=' film-cont'>
                 
-                <img className='film-big-image position-absolute start-0' src={'http://localhost:5000/'+ film.img_film_page} alt="" />
+                <img className='film-big-image position-absolute start-0' 
+                src={ film.img_film_page == undefined ? '/public/bkg.jpg' : 'http://localhost:5000/' + film.img_film_page  }
+                 alt={film.name} />
                 <div className='film-blacker_blur'></div>
                 <div>
                     <h1 className='film-title'>{film.name}</h1>
@@ -71,6 +73,25 @@ export function FilmPage () {
                
                 
             </div>
+            <div className='filminfo-info'>
+                <h1 className='filminfo-info-title'>Информация</h1>
+
+                <div>
+                    <h2 className='filminfo-info-desc'>Страна</h2>
+                    <h2 className='filminfo-info-ans'>{film.country}</h2>
+                </div>
+
+                <div>
+                    <h2 className='filminfo-info-desc'>Жанр</h2>
+                    <h2 className='filminfo-info-ans'>{genre}</h2>
+                </div>
+
+                <div>
+                    <h2 className='filminfo-info-desc'>Режиссёр</h2>
+                    <h2 className='filminfo-info-ans'>{film.director}</h2>
+                </div>
+
+            </div>
 
 
 
@@ -80,25 +101,7 @@ export function FilmPage () {
 
             </div>
 
-            <div className='filminfo-info'>
-                <h1 className='filminfo-info-title'>Информация</h1>
-
-                <span>
-                    <h2 className='filminfo-info-desc'>Страна</h2>
-                    <h2 className='filminfo-info-ans'>{film.country}</h2>
-                </span>
-
-                <span>
-                    <h2 className='filminfo-info-desc'>Жанр</h2>
-                    <h2 className='filminfo-info-ans'>{genre}</h2>
-                </span>
-
-                <span>
-                    <h2 className='filminfo-info-desc'>Режиссёр</h2>
-                    <h2 className='filminfo-info-ans'>{film.director}</h2>
-                </span>
-
-            </div>
+           
 
             
 
