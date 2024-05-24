@@ -1,57 +1,93 @@
 [
     {
-        "image" : "./se7en.jpg",
-        "title" : "Семь",
-        "rating": 9.2,
-        "year": 1995
+        "id":11,
+        "img" : "/public/small/roadhouse.jpg",
+        "name" : "Дом у дороги",
+        "rating": 7.6,
+        "year": 2024
+    },
+    {
+        "id":11,
+        "img" : "/public/small/fallguy.jpg",
+        "name" : "Каскадёры",
+        "rating": 7.6,
+        "year": 2024
+    },
+    {
+        "id":11,
+        "img" : "/public/small/challangers.jpg",
+        "name" : "Претенденты",
+        "rating": 7.6,
+        "year": 2024
+    },
+    {
+        "id":11,
+        "img" : "/public/small/arthur.jpg",
+        "name" : "Артур, ты король",
+        "rating": 7.6,
+        "year": 2024
+    },
+
+    {
+        "id":4,
+        "img" : "/small//taxist.jpg",
+        "name" : "Таксист",
+        "rating": 7.6,
+        "year": 1976
+    },
+    {
+        "id":5,
+        "img" : "/small//bladerunner.jpg",
+        "name" : "Бегущий по лезвию",
+        "rating": 7.6,
+        "year": 1982
+    },
+    
+    {
+        "id":6,
+        "img" : "/small//goodbad.jpg",
+        "name" : "Хороший, плохой, злой",
+        "rating": 9.9,
+        "year": 1966
+    },
+
+
+    {
+        "id":8,
+        "img" : "/small//harry.jpg",
+        "name" : "Грязный Гарри",
+        "rating": 8.8,
+        "year": 1971
+    },
+    
+    {
+        "id":7,
+        "img" : "/public/small/terminator.jpg",
+        "name" : "Терминатор",
+        "rating": 9.8,
+        "year": 1991 
         
     },
 
     
     
     {
-        "image" : "./sherlock.jpg",
-        "title" : "Шерлок Холмс",
+        "id":9,
+        "img" : "/small//fightclub.jpg",
+        "name" : "Бойцовский клуб",
         "rating": 7.6,
-        "year": 2009
+        "year": 1999
     },
 
     {
-        "image" : "./taxi.jpg",
-        "title" : "Такси",
-        "rating": 8.5,
-        "year": 1998
-    },
-    {
-        "image" : "./zodiac.jpg",
-        "title" : "Зодиак",
-        "rating": 8.7,
-        "year": 2007
-    },
-    {
-        "image": "./1+1.jpg",
-        "title": "1+1",
-        "rating": 9.4,
-        "year": 2001
-    },
-    {
-        "image": "./black.jpg",
-        "title": "Люди в чёрном",
-        "rating": 9.1,
-        "year": 1997
-    },
-    {
-        "image": "./wolf.jpg",
-        "title": "Волк с Уолл-Стрит",
-        "rating": 7.9,
-        "year": 2013
-    },
-    {
-        "image": "./knives out.jpg",
-        "title": "Достать Ножи",
-        "rating": 8.3,
-        "year": 2019
+        "id":10,
+        "img" : "/small//matrix.jpg",
+        "name" : "Матрица",
+        "rating": 7.6,
+        "year": 1999
     }
+
+
 
 
 ]
