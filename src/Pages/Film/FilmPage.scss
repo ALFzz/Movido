@@ -100,10 +100,10 @@ $primary : #9E13CF;
 .film-blacker_blur {
 
     width: 700px;
-    height: 520px;
+    height: 540px;
     filter: blur(20px);
     // clip-path: ellipse(130px 140px at 10% 20%);
-
+    margin-top: -20px;
     background-color: black;
     position: absolute;
 }

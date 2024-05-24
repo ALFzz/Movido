@@ -24,7 +24,7 @@ import { HOME_ROUTE } from '../../utils/consts';
   return (
     <>
 
-          <Navbar className=" fixed-top pb-0 mb-2 border-bottom  head-border-7" bg="black" data-bs-theme="dark">
+          <Navbar className=" fixed-top  mb-2 border-bottom  head-border-7" bg="black" data-bs-theme="dark">
             <Container >
             <NavLink className='head-brand text-white' to="/">Movido</NavLink>
               <Nav > 
