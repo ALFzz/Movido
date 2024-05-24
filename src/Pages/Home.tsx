@@ -19,7 +19,7 @@ export function Home() {
             </div>
             
             <Recommendation from={4} to={8} header="Нестареющая классика" subtitle="Киноленты, которые выдержали испытание временем и продолжают вдохновлять зрителей всех поколений" />
-            {/* <Recommendation header="Фильмы недели" subtitle="Только свежие новинки"/> */}
+            <Recommendation from={8} to={12} header="Смех до слёз" subtitle="Готовьтесь к нескончаемому веселью и незабываемым моментам смеха"/>
             <Footer/>            
             
         </>

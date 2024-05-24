@@ -9,7 +9,9 @@ import { fetchOneFilm } from '../../http/FilmAPI'
 
 enum Genre {
     Детектив = 1,
-    Боевик = 2
+    Боевик = 2,
+    Спорт = 3,
+    Приключения = 4
 
 }
 
