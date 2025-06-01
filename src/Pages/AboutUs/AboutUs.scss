@@ -1,49 +1,74 @@
-
-
 .about-title {
-    position: absolute;
     margin-top: 60px;
-    margin-left: 125px;
+    margin-left: 0;
+    padding: 0 20px;
     color: white;
-     font-family: 'Golos';
+    font-family: 'Golos';
     font-weight: 600;
-    //  font-size: 50px;
-}
+    font-size: 40px;
 
-.black-mockup {
-    width: 400px;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 650px;
-}
+    @media (max-width: 768px) {
+        font-size: 32px;
+        text-align: center;
+    }
 
-.intouchables-mockup {
-    width: 400px;
-    margin-top: -30px;
-    margin-left: 980px;
-    margin-right: 10px;
-    height: 300px;
-}
-
-.casino-mockup {
-    width: 450px;
-    height: 300px;
-    margin-top: -300px;
-    margin-left: 380px;
-    // margin-right: -600px;
-    // position: absolute;
-    // margin-left: -200px;
+    @media (max-width: 480px) {
+        font-size: 26px;
+    }
 }
 
 .about-subtitle {
-    position: absolute;
-    margin-top: 150px;
-    margin-right: 710px;
-    text-align: start;
-    margin-left: 125px;
+    margin-top: 30px;
+    padding: 0 20px;
     color: #808080;
-    // color: white;
     font-family: 'Golos';
     font-weight: 500;
-      font-size: 20px;
+    font-size: 18px;
+    max-width: 1000px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+}
+
+.about-content {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.mockup-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.mockup-wrapper img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+
+    @media (max-width: 768px) {
+        width: 250px;
+    }
+
+    @media (max-width: 480px) {
+        width: 200px;
+    }
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
