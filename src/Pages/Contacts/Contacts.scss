@@ -1,26 +1,49 @@
+.contacts-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-.contacts-footer {
-    margin-top: 466px;
+.contacts-content {
+    flex: 1;
+    padding: 60px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 
 .contacts-title {
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 125px;
+    text-align: start;
     color: white;
-     font-family: 'Golos';
+    font-family: 'Golos';
     font-weight: 600;
-    //  font-size: 50px;
+    font-size: 40px;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 26px;
+    }
 }
 
 .contacts-subtitle {
-    position: absolute;
-    margin-top: 150px;
-    margin-right: 131px;
-    text-align: start;
-    margin-left: 125px;
     color: #808080;
     font-family: 'Golos';
     font-weight: 500;
-      font-size: 20px;
+    font-size: 20px;
+    max-width: 800px;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
 }
