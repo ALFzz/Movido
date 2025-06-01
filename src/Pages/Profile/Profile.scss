@@ -95,7 +95,7 @@ $primary : #9E13CF;
     border: 3px solid $primary;
     
     
-     //background-color: #9E13CF;
+    //  background-color: #9E13CF;
      outline-color: #9E13CF !important;
 
 }
@@ -104,6 +104,12 @@ $primary : #9E13CF;
     background-color: black;
     box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     border-color: $primary;
+    
+}
+
+.profile-btn:active {
+    background-color: black;
+    box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     
 }
 
