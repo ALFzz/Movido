@@ -1,58 +1,189 @@
-$primary : #9E13CF;
+$primary: #9E13CF;
 
 @font-face {
-    font-family: "Porter Sans Block";
-    src: url("../fonts/portersansblock-regular-webfont.woff"),
-         url("../fonts/portersansblock-regular-webfont.woff2");
-}
-
-
-
-.foot-mid-links {
-    /* padding-right: 10px; */
-    color: white;
-    margin-left: 2px;
-    margin-right: 25px;
-    font-family: 'Golos';
-    font-size: 20px;
-    font-weight: 600;
-    
-}
-
-.foot-wrap {
-    margin-left: 8px;
+  font-family: "Porter Sans Block";
+  src: url("../fonts/portersansblock-regular-webfont.woff"),
+  url("../fonts/portersansblock-regular-webfont.woff2");
 }
 
 .foot-border-7 {
-    border-width: 7px !important;
-    border-color: $primary !important;
-    
-  }
+  border-width: 7px !important;
+  border-color: $primary !important;
+}
 
-  .foot-bot {
-    position:absolute;
-    margin-bottom: -160px;
-    bottom: 0;
-    width: 100%;
-  }
-
-
-
-.foot-right-links {
-    position: relative;
-    margin-right: -4px;
-    
-    margin-left:5px;
-    font-family: 'Golos';
-    font-size: 20px;
-    font-weight: 600;
-
-
-    
+.foot-bot {
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
 }
 
 .foot-brand {
-    margin-left: 35px;
-   font-family: "Porter Sans Block";
-   font-size: 30px;
+  margin-left: 35px;
+  font-family: "Porter Sans Block";
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.foot-mid-links {
+  color: white;
+  margin-left: 2px;
+  margin-right: 25px;
+  font-family: 'Golos';
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.foot-right-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Golos';
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.foot-wrap {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+.foot-brand {
+  font-family: "Porter Sans Block";
+  font-size: 30px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.foot-mid-links {
+  color: white;
+  margin: 0 12px;
+  font-family: 'Golos';
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.foot-right-links {
+  display: flex;
+  gap: 10px;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+// 📱 Адаптивность
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .foot-mid-links {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .foot-right-links img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .foot-brand {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .foot-mid-links {
+    margin: 8px 0;
+    font-size: 18px; // 🔼 увеличен с 16px до 18px
+  }
+
+  .foot-right-links img {
+    width: 60px;  // 🔼 увеличено
+    height: 60px;
+  }
+
+  .foot-brand {
+    font-size: 26px; // 🔼 увеличен с 24px до 26px
+    margin-bottom: 10px;
+  }
+}
+
+
+// 🔽 Адаптивность
+
+@media (max-width: 992px) {
+  .foot-brand {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .foot-mid-links {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .foot-right-links img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foot-bot {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .foot-wrap,
+  .foot-right-links {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .foot-mid-links {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .foot-brand {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .foot-right-links img {
+    width: 40px;
+    height: 40px;
+  }
 }
