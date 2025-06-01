@@ -220,3 +220,13 @@ $primary : #9E13CF;
     
 }
 
+.profile-btn:active {
+    background-color: black;
+    box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
+    border-color: $primary;
+    outline-color: #9E13CF !important;
+
+}
+
+
+

@@ -8,7 +8,6 @@ import { observer } from 'mobx-react-lite';
 
 
 
-
 export const CreateFilm = observer(({show, onHide}) => {
     const {film} = useContext(Context)
 
@@ -51,6 +50,7 @@ export const CreateFilm = observer(({show, onHide}) => {
     return(
         <>
         <Modal
+      variant={'dark'}
       show={show}
       onHide={onHide}
       size="lg"
@@ -138,8 +138,8 @@ export const CreateFilm = observer(({show, onHide}) => {
 
       </Modal.Body>
       <Modal.Footer>
-        <Button variant={'outline-danger'} onClick={onHide}>Закрыть</Button>
-        <Button variant={'outline-success'} onClick={addFilm}>Добавить</Button>
+        {/* <Button variant={'outline-danger'} onClick={onHide}>Закрыть</Button> */}
+        <Button variant={'outline-success'} onClick={addFilm}>Добавить фильм</Button>
       </Modal.Footer>
     </Modal>
         </>
