@@ -7,7 +7,6 @@ import { FAQ } from '../../Pages/FAQ';
 import { Contacts } from '../../Pages/Contacts/Contacts';
 import { AboutUs } from '../../Pages/AboutUs/AboutUs';
 import { FilmPage } from '../../Pages/Film/FilmPage';
-import {Registration} from '../../Registration/Registration'
 import { Autorization } from '../../Pages/Authorization/Authorization';
 import { Profile } from '../../Pages/Profile/Profile';
 // import { Heart } from './Film/Heart/Heart';

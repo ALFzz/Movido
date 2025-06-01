@@ -16,52 +16,91 @@ $primary : #9E13CF;
 .head-border-7 {
     border-width: 7px !important;
     border-color: $primary !important;
-  }
+}
 
 @font-face {
     font-family: "Porter Sans Block";
     src: url("../fonts/portersansblock-regular-webfont.woff"),
-         url("../fonts/portersansblock-regular-webfont.woff2");
+    url("../fonts/portersansblock-regular-webfont.woff2");
 }
-
-
-.head-mid-links {
-    margin-left: 20px;
-    color: white;
-    font-family: 'Golos';
-    font-size: 20px;
-    font-weight: 600;
-    
-}
-
-
-.head-enter {
-    position: relative;
-    color: white;
-    margin-right: 20px;
-    font-family: 'Golos';
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.head-reg {
-    position: relative;
-    color: white;
-    margin-right: 24px;
-    font-family: 'Golos';
-    font-size: 20px;
-    font-weight: 600;
-}
-
-
-
-
-
 
 .head-brand {
     margin-left: 35px;
-   font-family: "Porter Sans Block";
-   font-size: 30px;
+    font-family: "Porter Sans Block";
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.head-mid-links,
+.head-enter,
+.head-reg {
+    font-family: 'Golos';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.head-mid-links {
+    margin-left: 20px;
+}
+
+.head-enter,
+.head-reg {
+    position: relative;
+    margin-right: 20px;
+}
+
+.head-reg {
+    margin-right: 24px;
+}
+
+// Адаптивность
+@media (max-width: 992px) {
+    .head-mid-links {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .head-enter,
+    .head-reg {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .head-brand {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-mid-links {
+        display: block;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .head-enter,
+    .head-reg {
+        font-size: 14px;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .head-brand {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-collapse {
+        background-color: black;
+        padding: 10px;
+    }
 }
 
 
