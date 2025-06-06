@@ -65,9 +65,9 @@ export function FilmPage () {
                         <Heart/>
                     </div>
                 </div>
-
-
-
+                <img className='film-big-image'
+                     src={film.img_film_page == undefined ? '/public/bkg.jpg' : 'http://localhost:5000/' + film.img_film_page}
+                     alt={film.name}/>
 
             </div>
 

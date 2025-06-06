@@ -5,27 +5,29 @@ $primary: #9E13CF;
     display: flex;
     flex-direction: row;
     text-align: start;
-    justify-content: start;
-    height: 530px;
+    height: 500px;
     background: linear-gradient(0deg, $primary, black);
     background-size: 200% 200%;
     z-index: 1;
+    overflow: hidden;
 }
 
 .film-info {
     z-index: 3;
-    width: 700px;
-    height: 540px;
-    margin-left: 135px;
+    width: 700px; // или меньше, по желанию
 
+    flex-shrink: 0; // чтобы она не сжималась
+    margin-left: 135px;
     color: white;
 
 
 }
 
 .film-blur {
+    z-index: 2;
+    margin-left: -30px;
     position: absolute;
-    width: 700px;
+    width: 750px;
     height: 540px;
     background-color: black;
     filter: blur(20px);
@@ -71,8 +73,14 @@ $primary: #9E13CF;
 }
 
 .film-description {
-    padding-right: 202px;
+
+    padding-right: 120px;
+
+
 }
+
+
+
 
 .film-btns {
     display: flex;
@@ -93,6 +101,7 @@ $primary: #9E13CF;
     font-weight: 600;
     outline-color: #9E13CF !important;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .film-btn:hover {
@@ -100,5 +109,83 @@ $primary: #9E13CF;
     box-shadow: 0 5px 50px 0 $primary inset, 0 5px 50px 0 $primary;
     border-color: $primary;
 }
+
+.film-big-image {
+    margin-left: -350px;
+    width: 100%;
+    flex: 1;
+    opacity: 0.4;
+    object-fit: cover;
+    background-color: white;
+}
+
+/* === Планшеты и ниже === */
+@media screen and (max-width: 1024px) {
+    .film-big-image {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-height: 300px;
+    }
+    .film-title {
+        margin-top: 60px;
+    }
+    .film-blur {
+
+        margin-left: 0px;
+
+    }
+    .film-blur {
+        width: 100%;
+    }
+    .film-description {
+        padding-right: 0px;
+    }
+    .film-btn {
+        width: 100%;
+        width: 400px;
+        height: 60px;
+        font-size: 18px;
+
+    }
+
+    .film-btns{
+        flex-direction: column;
+    }
+
+    .film-cont {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+
+
+
+    .film-info {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}
+
+/* === Телефоны === */
+@media screen and (max-width: 480px) {
+    .film-big-image {
+        max-height: 200px;
+    }
+    .film-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+
 
 
