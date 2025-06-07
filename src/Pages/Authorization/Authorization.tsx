@@ -44,37 +44,37 @@ export const Autorization = observer(() => {
 
     return (
         <>
+            <div className="container">
+                <div className='auth-full'>
+                    <h1 className='auth-reg-title  mb-0'>{isLogin ? "Вход" : "Регистрация"}</h1>
 
-       
-
-        <div className='auth-full'>
-            <h1 className='auth-reg-title  mb-0'>{isLogin ? "Вход" : "Регистрация"}</h1>
-
-            <div className='form'>
-                <FloatingLabel
-                    controlId="floatingInput"
-                    label="Email"
-                    className="mb-5   auth-email"
-                    // style={{ width: '1000px' }}
-                    >
-                    <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="name@example.com" />
-                </FloatingLabel>
+                    <div className='form'>
+                        <FloatingLabel
+                            controlId="floatingInput"
+                            label="Email"
+                            className="mb-5   auth-email"
+                            // style={{ width: '1000px' }}
+                        >
+                            <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)}
+                                          placeholder="name@example.com"/>
+                        </FloatingLabel>
 
 
-                <FloatingLabel 
-                    controlId="floatingPassword"
-                    label="Пароль"
-                    className=' auth-password'>
-                    <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" />
-                 </FloatingLabel>
+                        <FloatingLabel
+                            controlId="floatingPassword"
+                            label="Пароль"
+                            className=' auth-password'>
+                            <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)}
+                                          placeholder="Password"/>
+                        </FloatingLabel>
 
-                <Button className='auth-btn btn-primary' onClick={click} >{isLogin ?  "Войти" : "Регистрация"}</Button>
+                        <Button className='auth-btn btn-primary'
+                                onClick={click}>{isLogin ? "Войти" : "Регистрация"}</Button>
+                    </div>
+                </div>
             </div>
-        </div>
 
 
-            
-    
         </>
     )
 })
