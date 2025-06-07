@@ -71,6 +71,7 @@ export function FilmPage () {
 
             </div>
 
+            <div className='film-line'></div>
             <div className="container">
                 <div className="filminfo">
                     <div className="filminfo-info">
