@@ -71,7 +71,6 @@ export const Autorization = observer(() => {
                 <Button className='auth-btn btn-primary' onClick={click} >{isLogin ?  "Войти" : "Регистрация"}</Button>
             </div>
         </div>
-            <Footer/>
 
 
             

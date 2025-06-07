@@ -97,7 +97,6 @@ export function FilmPage () {
 
 
 
-    <Footer/>
 
 </>
 )
