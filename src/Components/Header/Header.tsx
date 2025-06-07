@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink, useNavigate } from 'react-router-dom';
@@ -6,8 +5,7 @@ import './Header.scss'
 import { useContext } from 'react';
 import { Context } from '../../main';
 import { observer } from 'mobx-react-lite';
-import { Button } from 'react-bootstrap';
-import { HOME_ROUTE } from '../../utils/consts';
+
 
 
  export const Header = observer(() => {

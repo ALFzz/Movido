@@ -2,7 +2,6 @@ import React, { createContext } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { COMPUTED } from 'mobx/dist/internal'
 import { UserStore } from './store/UserStore'
 import { FilmStore } from './store/FilmStore'
 

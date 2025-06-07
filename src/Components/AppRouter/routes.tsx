@@ -1,18 +1,12 @@
-import { Component, useState } from 'react'
 import { Catalog } from '../../Pages/Catalog';
 import { Home } from '../../Pages/Home';
-import { Poster } from '../Poster/Poster';
-// import { Answer } from './Answer/Answer';
 import { FAQ } from '../../Pages/FAQ';
 import { Contacts } from '../../Pages/Contacts/Contacts';
 import { AboutUs } from '../../Pages/AboutUs/AboutUs';
 import { FilmPage } from '../../Pages/Film/FilmPage';
 import { Autorization } from '../../Pages/Authorization/Authorization';
 import { Profile } from '../../Pages/Profile/Profile';
-// import { Heart } from './Film/Heart/Heart';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { ABOUT_US_ROUTE, ADMIN_ROUTE, LOGIN_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, FAQ_ROUTE, FILM_ROUTE, HOME_ROUTE, PROFILE_ROUTE, REGISTRATION_ROUTE } from '../../utils/consts';
-import { FilmList } from '../Card/FilmList';
+import { ABOUT_US_ROUTE, LOGIN_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, FAQ_ROUTE, FILM_ROUTE, HOME_ROUTE, PROFILE_ROUTE, REGISTRATION_ROUTE } from '../../utils/consts';
 import { Detectives } from '../../Pages/Detectives';
 import { Actions } from '../../Pages/Actions';
 

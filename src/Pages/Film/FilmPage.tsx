@@ -1,6 +1,4 @@
 import { Button } from 'react-bootstrap'
-import { Footer } from '../../Components/Footer/Footer'
-import { Header } from '../../Components/Header/Header'
 import './FilmPage.scss'
 import { Heart } from '../../Components/Heart/Heart'
 import { useParams } from 'react-router-dom'

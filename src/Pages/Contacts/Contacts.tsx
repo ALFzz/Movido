@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from '../../Components/Header/Header';
 import './Contacts.scss';
-import { Footer } from '../../Components/Footer/Footer';
 
 export function Contacts() {
   return (

@@ -1,11 +1,4 @@
 import './Recomendation.scss'
-// import films from '../../films.json'
-// import { Card } from '../Card/Card'
-import { Context } from '../../../main'
-import { useContext, useEffect, useState } from 'react'
-import { fetchFilms } from '../../../http/FilmAPI';
-import { FilmList } from '../../Card/FilmList';
-import { Card } from '../../Card/Card';
 import films from '../../../films.json'
 import { Card1 } from '../../Card1/Card1';
 interface IRecommend {
