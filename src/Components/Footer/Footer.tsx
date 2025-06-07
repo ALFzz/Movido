@@ -16,9 +16,7 @@ export const Footer = () => {
           bg="black"
           data-bs-theme="dark"
       >
-        <Container className="d-flex justify-content-between align-items-center flex-wrap">
-
-          {/* Левая часть — логотип */}
+        <div className="container">
           <div className="footer-section footer-left">
             <NavLink className="foot-brand text-white" to="/">Movido</NavLink>
           </div>
@@ -36,18 +34,18 @@ export const Footer = () => {
           <div className="footer-section footer-right">
             <Nav className="foot-right-links">
               <Navbar.Brand>
-                <img src={icontg} width={70} height={70} alt="Telegram" />
+                <img src={icontg} width={70} height={70} alt="Telegram"/>
               </Navbar.Brand>
               <Navbar.Brand>
-                <img src={iconInstagram} width={70} height={70} alt="YouTube" />
+                <img src={iconInstagram} width={70} height={70} alt="YouTube"/>
               </Navbar.Brand>
               <Navbar.Brand>
-                <img src={iconVK} width={70} height={70} alt="VK" />
+                <img src={iconVK} width={70} height={70} alt="VK"/>
               </Navbar.Brand>
             </Nav>
           </div>
+        </div>
 
-        </Container>
       </Navbar>
   );
 };
