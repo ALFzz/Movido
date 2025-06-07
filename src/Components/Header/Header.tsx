@@ -25,7 +25,7 @@ import { HOME_ROUTE } from '../../utils/consts';
     <>
 
         <Navbar expand="lg" className="fixed-top border-bottom head-border-7" bg="black" data-bs-theme="dark">
-            <Container>
+            <div className="container">
                 <Navbar.Brand as={NavLink} className="head-brand text-white" to="/">Movido</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -46,7 +46,8 @@ import { HOME_ROUTE } from '../../utils/consts';
                         )}
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
+            </div>
+
         </Navbar>
 
 
