@@ -35,7 +35,6 @@ export const Actions = observer(() => {
     <FilmList/>
     
 
-    <Footer/>
     </>
   )
 });

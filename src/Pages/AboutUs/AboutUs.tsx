@@ -31,7 +31,6 @@ export function AboutUs() {
                     <img className='casino-mockup' src="iPhone 13.png" alt="iPhone 13" />
                 </div>
             </main>
-            <Footer />
         </div>
     )
 }

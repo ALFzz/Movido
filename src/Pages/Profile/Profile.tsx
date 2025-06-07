@@ -35,7 +35,6 @@ export function Profile() {
                     <CreateFilm show={filmVisible} onHide={() => setFilmVisible(false)}/>
                 </div>
 
-                <Footer/>
             </div>
 
 

@@ -18,7 +18,6 @@ export function Contacts() {
             Служба поддержки: support@movido.com или звоните нам по телефону в рабочее время.
           </h2>
         </main>
-        <Footer />
       </div>
   );
 }

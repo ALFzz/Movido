@@ -12,13 +12,13 @@ export function FAQ() {
 
   return (
     <>
-    
-    
-    {faq.map(faq => <Answer question={faq.question} answer={faq.answer}  />)}
+      <div className="container">
+        {faq.map(faq => <Answer question={faq.question} answer={faq.answer}  />)}
+
+      </div>
 
     
 
-    <Footer/>
     </>
   )
 }
