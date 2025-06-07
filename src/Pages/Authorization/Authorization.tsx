@@ -54,7 +54,7 @@ export const Autorization = observer(() => {
                 <FloatingLabel
                     controlId="floatingInput"
                     label="Email"
-                    className="mb-5 position-absolute   auth-email"
+                    className="mb-5   auth-email"
                     // style={{ width: '1000px' }}
                     >
                     <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="name@example.com" />
@@ -64,18 +64,14 @@ export const Autorization = observer(() => {
                 <FloatingLabel 
                     controlId="floatingPassword"
                     label="Пароль"
-                    className=' position-absolute auth-password'>
+                    className=' auth-password'>
                     <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" />
                  </FloatingLabel>
 
                 <Button className='auth-btn btn-primary' onClick={click} >{isLogin ?  "Войти" : "Регистрация"}</Button>
             </div>
-
-            <div className='auth-footer position-absolute  start-0 end-0 '>
-                <Footer/>
-            </div>
-            
         </div>
+            <Footer/>
 
 
             
