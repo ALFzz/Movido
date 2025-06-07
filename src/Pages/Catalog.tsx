@@ -35,9 +35,11 @@ export const Catalog = observer(() => {
 
   return (
     <>
-  
-    <FilmList/>
-    
+      <div className="container">
+        <FilmList/>
+
+      </div>
+
 
     </>
   )

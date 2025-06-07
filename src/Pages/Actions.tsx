@@ -29,11 +29,10 @@ export const Actions = observer(() => {
 
   return (
     <>
-    
-    
-    
-    <FilmList/>
-    
+      <div className="container">
+        <FilmList/>
+      </div>
+
 
     </>
   )

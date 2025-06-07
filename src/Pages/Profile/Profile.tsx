@@ -26,15 +26,16 @@ export function Profile() {
     return (
 
         <>
+            <div className="container">
+                <div className="profile-page">
+                    <div className="profile-content">
+                        <Button className='profile-btn btn-primary' onClick={() => setFilmVisible(true)}>Создать
+                            фильм</Button>
+                        <Button onClick={logOut} className='profile-btn btn-primary'>Выйти</Button>
+                        <CreateFilm show={filmVisible} onHide={() => setFilmVisible(false)}/>
+                    </div>
 
-            <div className="profile-page">
-                <div className="profile-content">
-                    <Button className='profile-btn btn-primary' onClick={() => setFilmVisible(true)}>Создать
-                        фильм</Button>
-                    <Button onClick={logOut} className='profile-btn btn-primary'>Выйти</Button>
-                    <CreateFilm show={filmVisible} onHide={() => setFilmVisible(false)}/>
                 </div>
-
             </div>
 
 
