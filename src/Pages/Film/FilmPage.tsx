@@ -19,18 +19,18 @@ enum Genre {
 
 export function FilmPage () {
     const [film, setFilm] = useState<any>({})
-    const genre: string = Genre[film.genreId] 
+    const genre: string = Genre[film.genreId]
     const {id} = useParams()
     // console.log(params)
     useEffect(() => {
-        fetchOneFilm(id).then(data => 
+        fetchOneFilm(id).then(data =>
             {
                 setFilm(data)
                 // console.log(data.genre())
 
             })
     })
-    // const film = 
+    // const film =
     // {
     //     id: 1,
     //     title: 'Люди в чёрном',
@@ -48,69 +48,57 @@ export function FilmPage () {
     // }
     return(
         <>
-             <div className=' film-cont'>
-                
-                <img className='film-big-image position-absolute start-0' 
-                src={ film.img_film_page == undefined ? '/public/bkg.jpg' : 'http://localhost:5000/' + film.img_film_page  }
-                 alt={film.name} />
-                <div className='film-blacker_blur'></div>
-                <div>
+            <div className="film-cont">
+                <div className="film-blur"></div>
+                <div className="film-main-info">
                     <h1 className='film-title'>{film.name}</h1>
-                    <Button className='film-btn'>Смотреть</Button>
-                    <div className='film-pos'><Heart/></div>
-                    
-
-                    <span>
+                    <div className="film-rate-date">
                         <p className='film-rate'>{film.rating}</p>
                         <p className='film-year'>{film.release_year}</p>
-                    </span>
+                    </div>
 
                     <h3 className='film-genres'>{genre}</h3>
-
                     <h3 className='film-description'>{film.small_description}</h3>
-                    
+
+                    <div className="film-btns">
+                        <Button className='film-btn'>Смотреть</Button>
+                        <Heart/>
+                    </div>
                 </div>
-
-
-                <div className='film-line'></div>
-
-               
-                
-            </div>
-            <div className='filminfo-info'>
-                <h1 className='filminfo-info-title'>Информация</h1>
-
-                <div>
-                    <h2 className='filminfo-info-desc'>Страна</h2>
-                    <h2 className='filminfo-info-ans'>{film.country}</h2>
-                </div>
-
-                <div>
-                    <h2 className='filminfo-info-desc'>Жанр</h2>
-                    <h2 className='filminfo-info-ans'>{genre}</h2>
-                </div>
-
-                <div>
-                    <h2 className='filminfo-info-desc'>Режиссёр</h2>
-                    <h2 className='filminfo-info-ans'>{film.director}</h2>
-                </div>
+                <img className='film-big-image'
+                     src={film.img_film_page == undefined ? '/public/bkg.jpg' : 'http://localhost:5000/' + film.img_film_page}
+                     alt={film.name}/>
 
             </div>
 
+            <div className="filminfo">
+                <div className="filminfo-info">
+                    <h1 className="filminfo-info-title">Информация</h1>
+                    <div>
+                        <h2 className="filminfo-info-desc">Страна</h2>
+                        <h2 className="filminfo-info-ans">{film.country}</h2>
+                    </div>
+                    <div>
+                        <h2 className="filminfo-info-desc">Жанр</h2>
+                        <h2 className="filminfo-info-ans">{genre}</h2>
+                    </div>
+                    <div>
+                        <h2 className="filminfo-info-desc">Режиссёр</h2>
+                        <h2 className="filminfo-info-ans">{film.director}</h2>
+                    </div>
+                </div>
 
-
-            <div className='filminfo-plot'>
-                <h1 className='filminfo-plot-title'>Сюжет</h1>
-                <h2 className='filminfo-plot-desc'>{film.big_description}</h2>
+                <div className="filminfo-plot">
+                    <h1 className="filminfo-plot-title">Сюжет</h1>
+                    <h2 className="filminfo-plot-desc">{film.big_description}</h2>
+                </div>
 
             </div>
 
-           
 
-            
 
-            <Footer/>
+    <Footer/>
 
-        </>
-    )
+</>
+)
 }
