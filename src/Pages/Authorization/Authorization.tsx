@@ -1,9 +1,7 @@
 import './Authorization.scss'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-import { Header } from '../../Components/Header/Header';
 import { Button } from 'react-bootstrap';
-import { Footer } from '../../Components/Footer/Footer';
 import { login, registration } from '../../http/userAPI';
 import { useContext, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';

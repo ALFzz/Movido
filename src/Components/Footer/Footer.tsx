@@ -1,8 +1,6 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Footer.scss';
-
 import icontg from '/icons/Telegram.svg';
 import iconInstagram from '/icons/Youtube.svg';
 import iconVK from '/icons/Vkontakte.svg';

@@ -1,10 +1,6 @@
-import { Header } from "../Components/Header/Header";
-import { Footer } from "../Components/Footer/Footer";
 import { Poster } from "../Components/Poster/Poster";
 import { Recommendation } from "../Components/Recs/Recommendation/Recommendation";
-import { Card1 } from "../Components/Card1/Card1";
-import films from '../films.json'
-import {Container} from "react-bootstrap";
+
 
 
 

@@ -1,14 +1,9 @@
-import { Footer } from '../../Components/Footer/Footer'
-import { Header } from '../../Components/Header/Header'
 import './Profile.scss'
-import Table from 'react-bootstrap/Table';
-import ListGroup from 'react-bootstrap/ListGroup';
 import { Button } from 'react-bootstrap';
 import { useContext, useState } from 'react';
 import { Context } from '../../main';
 import { useNavigate } from 'react-router-dom';
 import { HOME_ROUTE } from '../../utils/consts';
-import Modal from 'react-bootstrap/Modal';
 import { CreateFilm } from '../../Components/CreateFilm/CreateFilm';
 export function Profile() {
     const navigate = useNavigate()

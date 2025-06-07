@@ -1,12 +1,7 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import films from './films.json'
 import { Card } from './Card';
-import { Button, Container } from 'react-bootstrap';
-
-
 import { observer } from 'mobx-react-lite';
-import { fetchFilms } from '../../http/FilmAPI';
 import { Context } from '../../main';
 
 

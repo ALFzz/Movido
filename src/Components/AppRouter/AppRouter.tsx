@@ -1,7 +1,5 @@
 import { Routes, Route,  } from "react-router-dom"
-import { authRoutes, publicRoutes } from "./routes"
-import { useContext } from "react"
-import { Context } from "../../main"
+import { publicRoutes } from "./routes"
 
 export const AppRouter = () => {
     // const isAuth = false

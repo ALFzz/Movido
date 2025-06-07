@@ -1,6 +1,4 @@
 import './AboutUs.scss'
-import { Footer } from "../../Components/Footer/Footer";
-import { Header } from "../../Components/Header/Header";
 
 export function AboutUs() {
     return (
