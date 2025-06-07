@@ -50,7 +50,7 @@ export function FilmPage () {
         <>
             <div className="film-cont">
                 <div className="film-blur"></div>
-                <div className="film-info">
+                <div className="film-main-info">
                     <h1 className='film-title'>{film.name}</h1>
                     <div className="film-rate-date">
                         <p className='film-rate'>{film.rating}</p>
@@ -71,9 +71,34 @@ export function FilmPage () {
 
             </div>
 
+            <div className="filminfo">
+                <div className="filminfo-info">
+                    <h1 className="filminfo-info-title">Информация</h1>
+                    <div>
+                        <h2 className="filminfo-info-desc">Страна</h2>
+                        <h2 className="filminfo-info-ans">{film.country}</h2>
+                    </div>
+                    <div>
+                        <h2 className="filminfo-info-desc">Жанр</h2>
+                        <h2 className="filminfo-info-ans">{genre}</h2>
+                    </div>
+                    <div>
+                        <h2 className="filminfo-info-desc">Режиссёр</h2>
+                        <h2 className="filminfo-info-ans">{film.director}</h2>
+                    </div>
+                </div>
 
-            <Footer/>
+                <div className="filminfo-plot">
+                    <h1 className="filminfo-plot-title">Сюжет</h1>
+                    <h2 className="filminfo-plot-desc">{film.big_description}</h2>
+                </div>
 
-        </>
-    )
+            </div>
+
+
+
+    <Footer/>
+
+</>
+)
 }
