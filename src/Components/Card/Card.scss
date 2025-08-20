@@ -13,7 +13,7 @@ $primary: #9E13CF;
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
 
   .card-rating {
     width: 54px;
@@ -39,7 +39,7 @@ $primary: #9E13CF;
 
 .card-h2-rating{
 
-    font-family: 'Golos';
+  font-family: 'Golos Text';
     font-size: 1.4rem;
     font-weight: 600;
     color: white;
@@ -52,7 +52,7 @@ $primary: #9E13CF;
     position: absolute;
     padding-left: 25px;
     margin-top: -20px;
-    font-family: 'Golos';
+    font-family: 'Golos Text';
     font-size: 23px;
     font-weight: 600;
     color: white;
@@ -62,7 +62,8 @@ $primary: #9E13CF;
     
     padding-right: 225px;
     margin-top: 15px;
-    font-family: 'Golos';
+    font-family: 'Golos Text';
+
     font-size: 18px;
     font-weight: 600;
     color: #CABCBC;

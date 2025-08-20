@@ -20,8 +20,8 @@ $primary : #9E13CF;
 
 @font-face {
     font-family: "Porter Sans Block";
-    src: url("../fonts/portersansblock-regular-webfont.woff"),
-    url("../fonts/portersansblock-regular-webfont.woff2");
+    src: url("/fonts/portersansblock-regular-webfont.woff"),
+    url("/fonts/portersansblock-regular-webfont.woff2");
 }
 
 .head-brand {
@@ -33,7 +33,7 @@ $primary : #9E13CF;
 .head-mid-links,
 .head-enter,
 .head-reg {
-    font-family: 'Golos';
+    font-family: 'Golos Text';
     font-size: 20px;
     font-weight: 600;
     color: white;

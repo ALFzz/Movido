@@ -1,41 +1,36 @@
+import path from "path";
+import dotenv from "dotenv";
 
-const path = require('path')
-require('dotenv').config({
-  path: path.resolve('server/', '.env')
-})
-const express = require('express')
-const sequelize = require('./db')
-const models = require('./models/models')
-const cors = require('cors')
-const fileUpload = require('express-fileupload')
-const router = require('./routes/server')
+dotenv.config({
+    path: path.resolve("server/", ".env"),
+});
 
+import express, { Application } from "express";
+import cors from "cors";
+import fileUpload from "express-fileupload";
 
-const PORT = process.env.PORT;
+import sequelize from "./db";
+import router from "./routes/server";
 
-const app = express();
+const PORT: number = Number(process.env.PORT) || 5000;
+
+const app: Application = express();
+
 app.use(cors());
-app.use(express.json())
-app.use(express.static(path.resolve(__dirname, 'static')))
-app.use(fileUpload({}))
-app.use('/api', router)
+app.use(express.json());
+app.use(express.static(path.resolve(__dirname, "static")));
+app.use(fileUpload({}));
 
+app.use("/api", router);
 
-
-
-
-const start = async () => {
+const start = async (): Promise<void> => {
     try {
         await sequelize.authenticate();
         await sequelize.sync();
         app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-
+    } catch (e) {
+        console.error("❌ Server error:", e);
     }
-    catch (e) {
-        console.log(e)
-    }
-}
+};
 
 start();
-
-

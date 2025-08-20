@@ -1,9 +1,10 @@
-const GenreRouter = require('express');
-const genrerouter = new GenreRouter();
-const genreController = require('../controllers/genreController')
-const checkRole = require('../middleware/checkRoleMiddleware')
+import { Router } from "express";
+import genreController from "../controllers/genreController";
+import checkRole from "../middleware/checkRoleMiddleware";
 
-genrerouter.post('/', genreController.create)
-genrerouter.get('/', genreController.getAll)
+const genreRouter: Router = Router();
 
-module.exports = genrerouter;
+genreRouter.post("/", checkRole("ADMIN"), genreController.create);
+genreRouter.get("/", genreController.getAll);
+
+export default genreRouter;

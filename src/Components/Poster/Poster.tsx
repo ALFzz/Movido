@@ -3,7 +3,10 @@ import './Poster.scss'
 import { useNavigate } from 'react-router-dom'
 import { CATALOG_ROUTE } from '../../utils/consts'
 
-export const Poster = () => {
+export const Poster =/**
+*
+*/
+ () => {
     const navigate = useNavigate()
     return (
         <>
@@ -48,7 +51,6 @@ export const Poster = () => {
                         <img className='head-img mt-5' src='/small//arthur.jpg'/>
                         <img className='head-img mt-5' src='/small//diamond.jpg'/>
                         <img className='head-img mt-5' src='/small//matrix.jpg'/>
-                        <img className='head-img mt-5' src='/small//godfather.jpg'/>
                         <img className='head-img mt-5' src='/small//Brat.jpg'/>
 
 
@@ -89,7 +91,6 @@ export const Poster = () => {
                         <img className='head-img mt-5' src='/small//arthur.jpg'/>
                         <img className='head-img mt-5' src='/small//diamond.jpg'/>
                         <img className='head-img mt-5' src='/small//matrix.jpg'/>
-                        <img className='head-img mt-5' src='/small//godfather.jpg'/>
                         <img className='head-img mt-5' src='/small//Brat.jpg'/>
 
 
