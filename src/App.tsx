@@ -8,16 +8,19 @@ import { Context } from './main';
 import { check } from './http/userAPI';
 import { Header } from './Components/Header/Header';
 import { AppRouter } from './Components/AppRouter/AppRouter';
-import { Footer } from './Components/Footer/Footer'; // ⬅️ Импортируем Footer
+import { Footer } from './Components/Footer/Footer';
 
 const App = observer(() => {
-    const { user } = useContext(Context);
+    const context = useContext(Context);
+    if (!context) throw new Error("Context is null");
+
+    const { user } = context;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         check()
-            .then(() => {
-                user.setUser(true);
+            .then((data) => {
+                user.setUser(data);
                 user.setIsAuth(true);
             })
             .finally(() => setLoading(false));
