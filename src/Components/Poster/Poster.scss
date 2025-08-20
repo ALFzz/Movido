@@ -1,7 +1,7 @@
 $primary: #9E13CF;
 
 .head-open {
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', sans-serif;
     font-size: 20px;
     font-weight: 600;
     margin: 0 200px;
@@ -39,7 +39,7 @@ $primary: #9E13CF;
 }
 
 .head-btn {
-    font-family: 'Golos Text';
+    font-family: 'Golos Text', sans-serif;
     font-size: 20px;
     font-weight: 600;
     background-color: black;
@@ -103,13 +103,13 @@ $primary: #9E13CF;
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
