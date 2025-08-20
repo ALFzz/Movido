@@ -30,7 +30,7 @@
 
     {
         "id":8,
-        "img" : "/small//taxist.jpg",
+        "img" : "/small/taxist.jpg",
         "name" : "Таксист",
         "rating": 7.6,
         "year": 1976
@@ -54,7 +54,7 @@
 
     {
         "id":11,
-        "img" : "/small//harry.jpg",
+        "img" : "/small/harry.jpg",
         "name" : "Грязный Гарри",
         "rating": 9.3,
         "year": 1971
@@ -62,7 +62,7 @@
     
     {
         "id":12,
-        "img" : "/public/small/payne.jpg",
+        "img" : "/small/payne.jpg",
         "name" : "Майор Пэйн",
         "rating": 9.4,
         "year": 1995 
@@ -73,7 +73,7 @@
     
     {
         "id":13,
-        "img" : "/small//hangover.jpg",
+        "img" : "/small/hangover.jpg",
         "name" : "Мальчишник в Вегасе",
         "rating": 8.8,
         "year": 2009
@@ -81,14 +81,14 @@
 
     {
         "id":14,
-        "img" : "/small//diamond.jpg",
+        "img" : "/small/diamond.jpg",
         "name" : "Бриллиантовая рука",
         "rating": 9.5,
         "year": 1968
     },
     {
         "id":15,
-        "img" : "/small//1+1.jpg",
+        "img" : "/small/1+1.jpg",
         "name" : "1+1",
         "rating": 9.7,
         "year": 2011
