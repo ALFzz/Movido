@@ -51,18 +51,19 @@ class UserController {
         try {
             const { email, password } = req.body;
 
-            const user = await User.findOne({ where: { email } });
-            if (!user) {
-                return res.status(404).json({
-                    message: "Пользователь не найден",
-                });
+            if (!email || !password) {
+                return res.status(400).json({ message: "Некорректный email или пароль" });
             }
 
-            const comparepassword = await bcrypt.compare(password, user.password);
-            if (!comparepassword) {
-                return res.status(401).json({
-                    message: "Неверный пароль",
-                });
+            const user = await User.findOne({ where: { email } });
+
+            if (!user || !user.getDataValue("password")) {
+                return res.status(404).json({ message: "Пользователь не найден" });
+            }
+
+            const isPasswordValid = await bcrypt.compare(password, user.getDataValue("password"));
+            if (!isPasswordValid) {
+                return res.status(401).json({ message: "Неверный пароль" });
             }
 
             const token = generateJwt(user.id, user.email, user.role);

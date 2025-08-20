@@ -5,13 +5,17 @@ import { Context } from '../../main';
 import { useNavigate } from 'react-router-dom';
 import { HOME_ROUTE } from '../../utils/consts';
 import { CreateFilm } from '../../Components/CreateFilm/CreateFilm';
+
 export function Profile() {
     const navigate = useNavigate()
-    const {user} = useContext(Context)
+    const context = useContext(Context);
+    if (!context) throw new Error("Context is null");
+
+    const { user } = context;
     const [filmVisible, setFilmVisible] = useState(false)
 
     const logOut = () => {
-      user.setUser({})
+      user.setUser(null)
       user.setIsAuth(false)
       navigate(HOME_ROUTE)
     }

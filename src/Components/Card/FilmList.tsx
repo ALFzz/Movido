@@ -8,7 +8,9 @@ import { Context } from '../../main';
 
 
 export const FilmList = observer(() => {
-  const {film} = useContext(Context)
+  const context = useContext(Context);
+  if (!context) throw new Error("Context is null");
+  const { film } = context;
   
   // useEffect(() => {
   //   fetchFilms().then(data => film.setFilms(data))

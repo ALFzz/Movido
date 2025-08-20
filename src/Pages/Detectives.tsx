@@ -9,7 +9,9 @@ import { fetchFilms } from '../http/FilmAPI';
 
 
 export const Detectives = observer(() => {
-  const {film} = useContext(Context)
+  const context = useContext(Context);
+  if (!context) throw new Error("Context is null");
+  const { film } = context;
 
   
 
