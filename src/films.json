@@ -1,28 +1,28 @@
 [
     {
         "id":4,
-        "img" : "/public/small/roadhouse.jpg",
+        "img" : "/small/roadhouse.jpg",
         "name" : "Дом у дороги",
         "rating": 7.7,
         "year": 2024
     },
     {
         "id":5,
-        "img" : "/public/small/fallguy.jpg",
+        "img" : "/small/fallguy.jpg",
         "name" : "Каскадёры",
         "rating": 7.1,
         "year": 2024
     },
     {
         "id":6,
-        "img" : "/public/small/challangers.jpg",
+        "img" : "/small/challangers.jpg",
         "name" : "Претенденты",
         "rating": 5.8,
         "year": 2024
     },
     {
         "id":7,
-        "img" : "/public/small/arthur.jpg",
+        "img" : "/small/arthur.jpg",
         "name" : "Артур, ты король",
         "rating": 8.1,
         "year": 2024
