@@ -1,32 +1,32 @@
 import { makeAutoObservable } from "mobx";
 
+export interface User {
+    id: number;
+    email: string;
+    role: string;
+}
+
 export class UserStore {
-    
+    private _isAuth: boolean = false;
+    private _user: User | null = null;
+
     constructor() {
-        this._isAuth = false;
-        this._user = {}
-        makeAutoObservable(this)
-
+        makeAutoObservable(this);
     }
 
-     setIsAuth(bool: boolean) : void {
-        this._isAuth = bool;
+    setIsAuth(isAuth: boolean): void {
+        this._isAuth = isAuth;
     }
 
-    setUser(user: any) {
+    setUser(user: User | null): void {
         this._user = user;
     }
 
-    get isAuth() {
+    get isAuth(): boolean {
         return this._isAuth;
     }
 
-    get user() {
+    get user(): User | null {
         return this._user;
     }
-
-    
-
-    _isAuth: boolean
-    _user: any
 }

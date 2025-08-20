@@ -45,7 +45,7 @@ export const Recommendation =
             <h2 className='rec-subtitle'>{props.subtitle}</h2>
             <div className='rec-arr'>
             
-            {films1.map((film) => <Card1 film={film}/> )}
+            {films1.map((film) => <Card1 key={film.id} film={film}/> )}
             {/* <FilmList/> */}
 
 

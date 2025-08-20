@@ -4,7 +4,7 @@ import { FAQ } from '../../Pages/FAQ';
 import { Contacts } from '../../Pages/Contacts/Contacts';
 import { AboutUs } from '../../Pages/AboutUs/AboutUs';
 import { FilmPage } from '../../Pages/Film/FilmPage';
-import { Autorization } from '../../Pages/Authorization/Authorization';
+import { Authorization } from '../../Pages/Authorization/Authorization';
 import { Profile } from '../../Pages/Profile/Profile';
 import { ABOUT_US_ROUTE, LOGIN_ROUTE, CATALOG_ROUTE, CONTACTS_ROUTE, FAQ_ROUTE, FILM_ROUTE, HOME_ROUTE, PROFILE_ROUTE, REGISTRATION_ROUTE } from '../../utils/consts';
 import { Detectives } from '../../Pages/Detectives';
@@ -28,11 +28,11 @@ export const publicRoutes = [
   },
   {
     path: LOGIN_ROUTE,
-    Component: <Autorization/>
+    Component: <Authorization/>
   },
   {
     path: REGISTRATION_ROUTE,
-    Component: <Autorization/>
+    Component: <Authorization/>
   },
   {
     path: PROFILE_ROUTE,

@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.scss'
 import { useContext } from 'react';
 import { Context } from '../../main';
@@ -9,8 +9,10 @@ import { observer } from 'mobx-react-lite';
 
 
  export const Header = observer(() => {
-  const navigate = useNavigate()
-  const {user} = useContext(Context)
+     const context = useContext(Context);
+     if (!context) throw new Error("Context is null");
+
+     const { user } = context;
 
 //   const logOut = () => {
 //     user.setUser({})

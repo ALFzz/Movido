@@ -1,11 +1,12 @@
-const Router = require('express');
-const router = new Router();
-const filmRouter = require('./filmRouter');
-const userRouter = require('./userRouter');
-const genreRouter = require('./genreRouter')
+import { Router } from "express";
+import filmRouter from "./filmRouter";
+import userRouter from "./userRouter";
+import genreRouter from "./genreRouter";
 
-router.use('/user', userRouter)
-router.use('/film', filmRouter)
-router.use('/genre', genreRouter)
+const router: Router = Router();
 
-module.exports = router;
+router.use("/user", userRouter);
+router.use("/film", filmRouter);
+router.use("/genre", genreRouter);
+
+export default router;
